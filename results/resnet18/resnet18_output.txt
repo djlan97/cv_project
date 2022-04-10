@@ -1,0 +1,117 @@
+C:\Users\Dylan\anaconda3\envs\computer_vision\python.exe C:/Users/Dylan/Documents/GitHub/cv_project/train_old.py
+Early stopping based on accuracy...
+Epoch 0/99
+----------
+train Loss: 2.2245 Acc: 0.3549
+val Loss: 1.6804 Acc: 0.5024
+Better val accuracy
+
+Validation Accuracy increased (0.0000 --> 0.5024).  Saving model ...
+
+Epoch 1/99
+----------
+train Loss: 1.5540 Acc: 0.5368
+val Loss: 1.4535 Acc: 0.5562
+Better val accuracy
+
+Validation Accuracy increased (0.5024 --> 0.5562).  Saving model ...
+
+Epoch 2/99
+----------
+train Loss: 1.3724 Acc: 0.5828
+val Loss: 1.3596 Acc: 0.5848
+Better val accuracy
+
+Validation Accuracy increased (0.5562 --> 0.5848).  Saving model ...
+
+Epoch 3/99
+----------
+train Loss: 1.2634 Acc: 0.6183
+val Loss: 1.2756 Acc: 0.6090
+Better val accuracy
+
+Validation Accuracy increased (0.5848 --> 0.6090).  Saving model ...
+
+Epoch 4/99
+----------
+train Loss: 1.1889 Acc: 0.6361
+val Loss: 1.2622 Acc: 0.6176
+Better val accuracy
+
+Validation Accuracy increased (0.6090 --> 0.6176).  Saving model ...
+
+Epoch 5/99
+----------
+train Loss: 1.1205 Acc: 0.6586
+val Loss: 1.1814 Acc: 0.6348
+Better val accuracy
+
+Validation Accuracy increased (0.6176 --> 0.6348).  Saving model ...
+
+Epoch 6/99
+----------
+train Loss: 1.0769 Acc: 0.6732
+val Loss: 1.1678 Acc: 0.6481
+Better val accuracy
+
+Validation Accuracy increased (0.6348 --> 0.6481).  Saving model ...
+
+Epoch 7/99
+----------
+train Loss: 0.9952 Acc: 0.6989
+val Loss: 1.1301 Acc: 0.6571
+Better val accuracy
+
+Validation Accuracy increased (0.6481 --> 0.6571).  Saving model ...
+
+Epoch 8/99
+----------
+train Loss: 0.9769 Acc: 0.7069
+val Loss: 1.1224 Acc: 0.6538
+
+EarlyStopping counter: 1 out of 5
+Epoch 9/99
+----------
+train Loss: 0.9696 Acc: 0.7100
+val Loss: 1.1157 Acc: 0.6671
+Better val accuracy
+
+Validation Accuracy increased (0.6571 --> 0.6671).  Saving model ...
+
+Epoch 10/99
+----------
+train Loss: 0.9685 Acc: 0.7073
+val Loss: 1.1142 Acc: 0.6638
+
+EarlyStopping counter: 1 out of 5
+Epoch 11/99
+----------
+train Loss: 0.9562 Acc: 0.7124
+val Loss: 1.1156 Acc: 0.6624
+
+EarlyStopping counter: 2 out of 5
+Epoch 12/99
+----------
+train Loss: 0.9482 Acc: 0.7148
+val Loss: 1.1079 Acc: 0.6614
+
+EarlyStopping counter: 3 out of 5
+Epoch 13/99
+----------
+train Loss: 0.9436 Acc: 0.7154
+val Loss: 1.1055 Acc: 0.6643
+
+EarlyStopping counter: 4 out of 5
+Epoch 14/99
+----------
+train Loss: 0.9347 Acc: 0.7179
+val Loss: 1.1030 Acc: 0.6662
+
+EarlyStopping counter: 5 out of 5
+Early stopping
+Training complete in 92m 52s
+Best val Loss: 1.115677 with Acc of 0.667143
+{'train': [2.224495155612628, 1.554001659154892, 1.3724347186585268, 1.2633502617478372, 1.1889300075670084, 1.1204813860356808, 1.0769482245047888, 0.9952409766614437, 0.9768596475323041, 0.9695720945795377, 0.9685244202613831, 0.9561987146735191, 0.9482041048506896, 0.943558699140946, 0.9347189153234164], 'val': [1.6803864320119222, 1.453540849685669, 1.359603867928187, 1.2755562444527944, 1.2621797978878022, 1.1813560803731282, 1.1678087790807088, 1.130054885149002, 1.1224327127138773, 1.1156766315301259, 1.114196785291036, 1.1156222979227701, 1.1079030652840933, 1.1055172125498454, 1.1029834270477294]}
+{'train': [0.3548809523809524, 0.5367857142857143, 0.5827976190476191, 0.6183333333333333, 0.6361309523809524, 0.6586309523809524, 0.6731547619047619, 0.6989285714285715, 0.7069047619047619, 0.71, 0.7073214285714285, 0.7124404761904762, 0.7147619047619047, 0.7153571428571428, 0.7178571428571429], 'val': [0.5023809523809524, 0.5561904761904762, 0.5847619047619048, 0.6090476190476191, 0.6176190476190476, 0.6347619047619047, 0.6480952380952381, 0.6571428571428571, 0.6538095238095238, 0.6671428571428571, 0.6638095238095238, 0.6623809523809524, 0.6614285714285715, 0.6642857142857143, 0.6661904761904762]}
+
+Process finished with exit code 0
