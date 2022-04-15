@@ -15,7 +15,6 @@ import copy
 from my_pytorchtools import EarlyStopping
 from serengeti_dataset import SerengetiDataset
 
-
 def train_model(model, criterion, optimizer, scheduler, num_epochs=100, patience=10, early_stopping_based_on_loss=True):
     since = time.time()
 
@@ -198,8 +197,8 @@ if __name__ == '__main__':
                                           data_transforms[x])
                       for x in ['train', 'val']}
 
-    dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=64,
-                                                  shuffle=True, num_workers=4)
+    dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=32,
+                                                  shuffle=True, num_workers=8)
                    for x in ['train', 'val']}
     dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
     class_names = list(labels_map.values())  # image_datasets['train'].classes
@@ -215,10 +214,12 @@ if __name__ == '__main__':
     imshow(out, title=[class_names[x] for x in classes])
 
     model_ft = models.resnet18(pretrained=True)
+
     num_ftrs = model_ft.fc.in_features
     # Here the size of each output sample is set to 21.
     # Alternatively, it can be generalized to nn.Linear(num_ftrs, len(class_names)).
     model_ft.fc = nn.Linear(num_ftrs, len(class_names))
+
 
     model_ft = model_ft.to(device)
 
