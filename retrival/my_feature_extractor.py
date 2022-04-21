@@ -108,10 +108,10 @@ def extractor(data):
     return fea_all, image_all
 
 
-def save_features(feats, image_list):
+def save_features(feats, image_list,path):
     feats_dict = {image_list[i]: feats[i] for i in range(len(image_list))}
 
-    with open('features.pkl', 'wb') as f:
+    with open(path, 'wb') as f:
         pickle.dump(feats_dict, f, protocol=pickle.HIGHEST_PROTOCOL)
 
 
