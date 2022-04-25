@@ -1,0 +1,144 @@
+Early stopping based on accuracy...
+Epoch 0/99
+----------
+train Loss: 2.4745 Acc: 0.2856
+val Loss: 1.8955 Acc: 0.4557
+Better val accuracy
+
+Validation Accuracy increased (0.0000 --> 0.4557).  Saving model ...
+
+Epoch 1/99
+----------
+train Loss: 1.7958 Acc: 0.4707
+val Loss: 1.5861 Acc: 0.5214
+Better val accuracy
+
+Validation Accuracy increased (0.4557 --> 0.5214).  Saving model ...
+
+Epoch 2/99
+----------
+train Loss: 1.5845 Acc: 0.5226
+val Loss: 1.4911 Acc: 0.5479
+Better val accuracy
+
+Validation Accuracy increased (0.5214 --> 0.5479).  Saving model ...
+
+Epoch 3/99
+----------
+train Loss: 1.4646 Acc: 0.5562
+val Loss: 1.3843 Acc: 0.5790
+Better val accuracy
+
+Validation Accuracy increased (0.5479 --> 0.5790).  Saving model ...
+
+Epoch 4/99
+----------
+train Loss: 1.3904 Acc: 0.5748
+val Loss: 1.3313 Acc: 0.5905
+Better val accuracy
+
+Validation Accuracy increased (0.5790 --> 0.5905).  Saving model ...
+
+Epoch 5/99
+----------
+train Loss: 1.3211 Acc: 0.6001
+val Loss: 1.2903 Acc: 0.6029
+Better val accuracy
+
+Validation Accuracy increased (0.5905 --> 0.6029).  Saving model ...
+
+Epoch 6/99
+----------
+train Loss: 1.2836 Acc: 0.6024
+val Loss: 1.2781 Acc: 0.6057
+Better val accuracy
+
+Validation Accuracy increased (0.6029 --> 0.6057).  Saving model ...
+
+Epoch 7/99
+----------
+train Loss: 1.2231 Acc: 0.6274
+val Loss: 1.2363 Acc: 0.6186
+Better val accuracy
+
+Validation Accuracy increased (0.6057 --> 0.6186).  Saving model ...
+
+Epoch 8/99
+----------
+train Loss: 1.2173 Acc: 0.6220
+val Loss: 1.2302 Acc: 0.6221
+Better val accuracy
+
+Validation Accuracy increased (0.6186 --> 0.6221).  Saving model ...
+
+Epoch 9/99
+----------
+train Loss: 1.2145 Acc: 0.6295
+val Loss: 1.2272 Acc: 0.6186
+
+EarlyStopping counter: 1 out of 5
+Epoch 10/99
+----------
+train Loss: 1.2133 Acc: 0.6260
+val Loss: 1.2264 Acc: 0.6229
+Better val accuracy
+
+Validation Accuracy increased (0.6221 --> 0.6229).  Saving model ...
+
+Epoch 11/99
+----------
+train Loss: 1.1982 Acc: 0.6319
+val Loss: 1.2208 Acc: 0.6195
+
+EarlyStopping counter: 1 out of 5
+Epoch 12/99
+----------
+train Loss: 1.1944 Acc: 0.6365
+val Loss: 1.2187 Acc: 0.6188
+
+EarlyStopping counter: 2 out of 5
+Epoch 13/99
+----------
+train Loss: 1.1846 Acc: 0.6359
+val Loss: 1.2164 Acc: 0.6267
+Better val accuracy
+
+Validation Accuracy increased (0.6229 --> 0.6267).  Saving model ...
+
+Epoch 14/99
+----------
+train Loss: 1.1814 Acc: 0.6383
+val Loss: 1.2155 Acc: 0.6226
+
+EarlyStopping counter: 1 out of 5
+Epoch 15/99
+----------
+train Loss: 1.1895 Acc: 0.6380
+val Loss: 1.2132 Acc: 0.6219
+
+EarlyStopping counter: 2 out of 5
+Epoch 16/99
+----------
+train Loss: 1.1820 Acc: 0.6382
+val Loss: 1.2129 Acc: 0.6226
+
+EarlyStopping counter: 3 out of 5
+Epoch 17/99
+----------
+train Loss: 1.1865 Acc: 0.6389
+val Loss: 1.2147 Acc: 0.6226
+
+EarlyStopping counter: 4 out of 5
+Epoch 18/99
+----------
+train Loss: 1.1792 Acc: 0.6392
+val Loss: 1.2138 Acc: 0.6243
+
+EarlyStopping counter: 5 out of 5
+Early stopping
+Training complete in 190m 41s
+Best val Loss: 1.216373 with Acc of 0.626667
+{'train': [2.4744781298296794, 1.7958206988516308, 1.5844683122067225, 1.464624910127549, 1.390434443950653, 1.3211337391819273, 1.283588140138558, 1.2231306472704524, 1.217319179148901, 1.214514402761346, 1.2132704566631998, 1.1981954602968126, 1.1944059836012977, 1.1846392715261096, 1.1814453577001889, 1.189461083284446, 1.18202186695167, 1.1865355372428894, 1.1792416143275442], 'val': [1.8954712521462214, 1.586140743323735, 1.4911458832877023, 1.3842927785146804, 1.3313332881246294, 1.2902749805223375, 1.2780943115552266, 1.2362661304928007, 1.2302343462194716, 1.2272350106920515, 1.2263529669670832, 1.22081973581087, 1.2187276638689495, 1.2163725850127993, 1.2155365262712752, 1.2131663773741042, 1.2129378886449904, 1.2146630372319902, 1.2137557168801625]}
+{'train': [0.28559523809523807, 0.4707142857142857, 0.5226190476190476, 0.5561904761904762, 0.5747619047619048, 0.6001190476190477, 0.6023809523809524, 0.6274404761904762, 0.6220238095238095, 0.6295238095238095, 0.6259523809523809, 0.6319047619047619, 0.6364880952380952, 0.6358928571428571, 0.6382738095238095, 0.6380357142857143, 0.638154761904762, 0.6389285714285714, 0.6392261904761904], 'val': [0.45571428571428574, 0.5214285714285715, 0.5478571428571428, 0.579047619047619, 0.5904761904761905, 0.6028571428571429, 0.6057142857142858, 0.6185714285714285, 0.6221428571428571, 0.6185714285714285, 0.6228571428571429, 0.6195238095238095, 0.6188095238095238, 0.6266666666666667, 0.6226190476190476, 0.6219047619047618, 0.6226190476190476, 0.6226190476190476, 0.6242857142857143]}
+
+Process finished with exit code 0

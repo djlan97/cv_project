@@ -14,9 +14,12 @@ import os
 import copy
 from my_pytorchtools import EarlyStopping
 from serengeti_dataset import SerengetiDataset
+import datetime
+
 
 def train_model(model, criterion, optimizer, scheduler, num_epochs=100, patience=10, early_stopping_based_on_loss=True):
     since = time.time()
+    print('start: {}'.format(datetime.datetime.now()))
 
     best_model_wts = copy.deepcopy(model.state_dict())
     best_acc = 0.0
@@ -96,6 +99,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=100, patience
                     print('Better val accuracy')
 
         print()
+        print('Epoch ended: {}'.format(datetime.datetime.now()))
 
         if early_stopping_based_on_loss:
             early_stopping(epoch_loss, model)
@@ -145,6 +149,8 @@ def visualize_model(model, num_images=6):
 
 if __name__ == '__main__':
     early_stopping_based_on_loss = False
+    batch_size = 64
+    num_workers = 8
     plt.ion()
 
     labels_map = {0: 'baboon',
@@ -172,9 +178,12 @@ if __name__ == '__main__':
     data_transforms = {
         'train': transforms.Compose([
             transforms.ToPILImage(),
-            transforms.Resize(256),
-            transforms.RandomCrop(224),
             transforms.RandomHorizontalFlip(),
+            transforms.RandomVerticalFlip(p=0.3),
+            transforms.RandomApply(transforms=[transforms.RandomRotation(30)], p=0.3),
+            transforms.RandomApply(transforms=[transforms.GaussianBlur(kernel_size=7, sigma=1)], p=0.2),
+            transforms.RandomResizedCrop(224, scale=(0.7, 1)),
+            transforms.RandomAdjustSharpness(sharpness_factor=2),
             transforms.ToTensor(),
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ]),
@@ -197,8 +206,8 @@ if __name__ == '__main__':
                                           data_transforms[x])
                       for x in ['train', 'val']}
 
-    dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=32,
-                                                  shuffle=True, num_workers=8)
+    dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=batch_size,
+                                                  shuffle=True, num_workers=num_workers)
                    for x in ['train', 'val']}
     dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
     class_names = list(labels_map.values())  # image_datasets['train'].classes
@@ -213,25 +222,24 @@ if __name__ == '__main__':
 
     imshow(out, title=[class_names[x] for x in classes])
 
-    model_ft = models.resnet18(pretrained=True)
+    model_ft = models.resnet34(pretrained=True)
 
     num_ftrs = model_ft.fc.in_features
     # Here the size of each output sample is set to 21.
     # Alternatively, it can be generalized to nn.Linear(num_ftrs, len(class_names)).
     model_ft.fc = nn.Linear(num_ftrs, len(class_names))
 
-
     model_ft = model_ft.to(device)
 
     criterion = nn.CrossEntropyLoss()
 
     # Observe that all parameters are being optimized
-    optimizer_ft = optim.SGD(model_ft.parameters(), lr=0.001, momentum=0.9)
+    optimizer_ft = optim.SGD(model_ft.parameters(), lr=0.1, momentum=0.9)
 
     # Decay LR by a factor of 0.1 every 7 epochs
-    exp_lr_scheduler = lr_scheduler.StepLR(optimizer_ft, step_size=7, gamma=0.1)
+    exp_lr_scheduler = lr_scheduler.StepLR(optimizer_ft, step_size=10, gamma=0.1)
 
-    model_ft, losses, accuracies = train_model(model_ft, criterion, optimizer_ft, exp_lr_scheduler, patience=5,
+    model_ft, losses, accuracies = train_model(model_ft, criterion, optimizer_ft, exp_lr_scheduler, patience=7,
                                                num_epochs=100,
                                                early_stopping_based_on_loss=early_stopping_based_on_loss)
 
@@ -240,6 +248,8 @@ if __name__ == '__main__':
 
     print(losses)
     print(accuracies)
+    print('num_workers: {}'.format(num_workers))
+    print('batch_size: {}'.format(batch_size))
 
     torch.save(model_ft.state_dict(), 'parameters.pt')
     torch.save(model_ft, 'model.pt')
