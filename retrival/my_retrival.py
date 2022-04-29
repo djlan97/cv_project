@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-from my_feature_extractor import extractor, save_features, plot_results
+from my_feature_extractor import extractor, save_features, plot_results, plot_save_results
 import pickle
 import pandas as pd
 
@@ -85,3 +85,5 @@ if __name__ == '__main__':
 
     print('Recall vector for each K: {}'.format(recall_scores_for_k))
     print('Precision vector for each K: {}'.format(precision_scores_for_k))
+
+    plot_save_results(recall_scores_for_k,precision_scores_for_k,K)

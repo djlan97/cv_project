@@ -65,11 +65,19 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 # Import pre-trained model from by using torchvision package
 model = torchvision.models.resnet50(pretrained=True)  # resnet 50 model is imported
 
+num_ftrs = model.fc.in_features
+# Here the size of each output sample is set to 21.
+# Alternatively, it can be generalized to nn.Linear(num_ftrs, len(class_names)).
+model.fc = nn.Linear(num_ftrs, 21)
+model.load_state_dict(torch.load('../results/resnet50/resnet50_parameters.pt'))
+
+
+
 # set the model train False since we are using our feature extraction network
 model.train(False)
 
 # Set our model with pre-trained model
-my_resnet = MyResNetFeatureExtractor(model).to(device)
+my_resnet = torch.nn.Sequential(*(list(model.children())[:-1])).to(device)#MyResNetFeatureExtractor(model).to(device)
 
 
 def extractor(data):
@@ -128,3 +136,27 @@ def plot_results(imlist,scores):
         ax.set_title('{:.3f}%'.format(scores[i]))
         ax.axis('off')
     plt.show()
+
+def plot_save_results(recalls, precisions,k):
+    # visualize the loss as the network trained
+    fig_loss = plt.figure(figsize=(10, 8))
+    plt.plot(range(1, k+1), recalls, label='Recall')
+    plt.plot(range(1, k+1), precisions, label='Precision')
+
+    plt.xlabel('k')
+    plt.xticks(range(0, k+1))
+
+    plt.grid(True)
+    plt.legend()
+    plt.tight_layout()
+    plt.ylim(0, 1)
+
+    '''
+    
+    #plt.ylim(0, 0.5)  # consistent scale
+
+    plt.xlim(0, k)  # consistent scale
+    '''
+    plt.show()
+    fig_loss.savefig('plot.png', bbox_inches='tight')
+
