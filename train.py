@@ -150,11 +150,11 @@ if __name__ == '__main__':
     show_dataloader_example = False
     early_stopping_based_on_loss = True
     early_stopping_patience = 7
-    batch_size = 64
+    batch_size = 32
     num_workers = 8
     lr = 0.001
-    step_size = 15
-    model = 'googlenet'
+    step_size = 7
+    model = 'resnet50'
 
     plt.ion()
 

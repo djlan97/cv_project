@@ -1,0 +1,264 @@
+C:\Users\Dylan\anaconda3\envs\computer_vision\python.exe C:/Users/Dylan/Documents/GitHub/cv_project/train.py
+Starting resnet34 training on cuda:0...
+start: 2022-04-30 09:04:24.721588
+Early stopping based on loss...
+Epoch 0/99
+----------
+train Loss: 2.2810 Acc: 0.3460
+val Loss: 1.6972 Acc: 0.5102
+Better val loss
+
+Epoch ended: 2022-04-30 09:17:16.493637
+Validation loss decreased (inf --> 1.6972).  Saving model ...
+
+Epoch 1/99
+----------
+train Loss: 1.5004 Acc: 0.5546
+val Loss: 1.4388 Acc: 0.5664
+Better val loss
+
+Epoch ended: 2022-04-30 09:30:28.538517
+Validation loss decreased (1.6972 --> 1.4388).  Saving model ...
+
+Epoch 2/99
+----------
+train Loss: 1.2781 Acc: 0.6104
+val Loss: 1.3309 Acc: 0.5990
+Better val loss
+
+Epoch ended: 2022-04-30 09:43:25.201417
+Validation loss decreased (1.4388 --> 1.3309).  Saving model ...
+
+Epoch 3/99
+----------
+train Loss: 1.1672 Acc: 0.6409
+val Loss: 1.2767 Acc: 0.6052
+Better val loss
+
+Epoch ended: 2022-04-30 09:56:25.494616
+Validation loss decreased (1.3309 --> 1.2767).  Saving model ...
+
+Epoch 4/99
+----------
+train Loss: 1.0893 Acc: 0.6618
+val Loss: 1.2422 Acc: 0.6205
+Better val loss
+
+Epoch ended: 2022-04-30 10:09:36.786500
+Validation loss decreased (1.2767 --> 1.2422).  Saving model ...
+
+Epoch 5/99
+----------
+train Loss: 1.0342 Acc: 0.6815
+val Loss: 1.2075 Acc: 0.6238
+Better val loss
+
+Epoch ended: 2022-04-30 10:22:42.243323
+Validation loss decreased (1.2422 --> 1.2075).  Saving model ...
+
+Epoch 6/99
+----------
+train Loss: 0.9813 Acc: 0.6977
+val Loss: 1.1743 Acc: 0.6424
+Better val loss
+
+Epoch ended: 2022-04-30 10:35:37.476394
+Validation loss decreased (1.2075 --> 1.1743).  Saving model ...
+
+Epoch 7/99
+----------
+train Loss: 0.9373 Acc: 0.7129
+val Loss: 1.1611 Acc: 0.6481
+Better val loss
+
+Epoch ended: 2022-04-30 10:48:40.554249
+Validation loss decreased (1.1743 --> 1.1611).  Saving model ...
+
+Epoch 8/99
+----------
+train Loss: 0.8924 Acc: 0.7244
+val Loss: 1.1404 Acc: 0.6502
+Better val loss
+
+Epoch ended: 2022-04-30 11:01:39.548862
+Validation loss decreased (1.1611 --> 1.1404).  Saving model ...
+
+Epoch 9/99
+----------
+train Loss: 0.8638 Acc: 0.7321
+val Loss: 1.1087 Acc: 0.6588
+Better val loss
+
+Epoch ended: 2022-04-30 11:14:41.891674
+Validation loss decreased (1.1404 --> 1.1087).  Saving model ...
+
+Epoch 10/99
+----------
+train Loss: 0.8289 Acc: 0.7454
+val Loss: 1.0993 Acc: 0.6631
+Better val loss
+
+Epoch ended: 2022-04-30 11:27:56.801121
+Validation loss decreased (1.1087 --> 1.0993).  Saving model ...
+
+Epoch 11/99
+----------
+train Loss: 0.8035 Acc: 0.7498
+val Loss: 1.1255 Acc: 0.6588
+
+Epoch ended: 2022-04-30 11:41:07.294508
+EarlyStopping counter: 1 out of 7
+Epoch 12/99
+----------
+train Loss: 0.7780 Acc: 0.7580
+val Loss: 1.1099 Acc: 0.6662
+
+Epoch ended: 2022-04-30 11:54:12.652513
+EarlyStopping counter: 2 out of 7
+Epoch 13/99
+----------
+train Loss: 0.7426 Acc: 0.7693
+val Loss: 1.0898 Acc: 0.6674
+Better val loss
+
+Epoch ended: 2022-04-30 12:07:17.544231
+Validation loss decreased (1.0993 --> 1.0898).  Saving model ...
+
+Epoch 14/99
+----------
+train Loss: 0.7279 Acc: 0.7742
+val Loss: 1.0940 Acc: 0.6721
+
+Epoch ended: 2022-04-30 12:20:35.445005
+EarlyStopping counter: 1 out of 7
+Epoch 15/99
+----------
+train Loss: 0.6747 Acc: 0.7934
+val Loss: 1.0623 Acc: 0.6824
+Better val loss
+
+Epoch ended: 2022-04-30 12:33:32.706524
+Validation loss decreased (1.0898 --> 1.0623).  Saving model ...
+
+Epoch 16/99
+----------
+train Loss: 0.6575 Acc: 0.7993
+val Loss: 1.0623 Acc: 0.6840
+Better val loss
+
+Epoch ended: 2022-04-30 12:46:42.343678
+Validation loss decreased (1.0623 --> 1.0623).  Saving model ...
+
+Epoch 17/99
+----------
+train Loss: 0.6487 Acc: 0.8007
+val Loss: 1.0585 Acc: 0.6855
+Better val loss
+
+Epoch ended: 2022-04-30 12:59:43.058044
+Validation loss decreased (1.0623 --> 1.0585).  Saving model ...
+
+Epoch 18/99
+----------
+train Loss: 0.6452 Acc: 0.8014
+val Loss: 1.0638 Acc: 0.6848
+
+Epoch ended: 2022-04-30 13:12:43.264883
+EarlyStopping counter: 1 out of 7
+Epoch 19/99
+----------
+train Loss: 0.6411 Acc: 0.8027
+val Loss: 1.0603 Acc: 0.6871
+
+Epoch ended: 2022-04-30 13:26:02.680068
+EarlyStopping counter: 2 out of 7
+Epoch 20/99
+----------
+train Loss: 0.6370 Acc: 0.8057
+val Loss: 1.0573 Acc: 0.6836
+Better val loss
+
+Epoch ended: 2022-04-30 13:39:15.835719
+Validation loss decreased (1.0585 --> 1.0573).  Saving model ...
+
+Epoch 21/99
+----------
+train Loss: 0.6362 Acc: 0.8064
+val Loss: 1.0588 Acc: 0.6836
+
+Epoch ended: 2022-04-30 13:52:36.543556
+EarlyStopping counter: 1 out of 7
+Epoch 22/99
+----------
+train Loss: 0.6322 Acc: 0.8068
+val Loss: 1.0627 Acc: 0.6826
+
+Epoch ended: 2022-04-30 14:05:50.511784
+EarlyStopping counter: 2 out of 7
+Epoch 23/99
+----------
+train Loss: 0.6182 Acc: 0.8124
+val Loss: 1.0512 Acc: 0.6850
+Better val loss
+
+Epoch ended: 2022-04-30 14:19:03.890573
+Validation loss decreased (1.0573 --> 1.0512).  Saving model ...
+
+Epoch 24/99
+----------
+train Loss: 0.6293 Acc: 0.8075
+val Loss: 1.0544 Acc: 0.6869
+
+Epoch ended: 2022-04-30 14:33:18.550964
+EarlyStopping counter: 1 out of 7
+Epoch 25/99
+----------
+train Loss: 0.6206 Acc: 0.8109
+val Loss: 1.0558 Acc: 0.6869
+
+Epoch ended: 2022-04-30 14:46:20.425465
+EarlyStopping counter: 2 out of 7
+Epoch 26/99
+----------
+train Loss: 0.6254 Acc: 0.8073
+val Loss: 1.0546 Acc: 0.6869
+
+Epoch ended: 2022-04-30 14:59:34.972828
+EarlyStopping counter: 3 out of 7
+Epoch 27/99
+----------
+train Loss: 0.6096 Acc: 0.8140
+val Loss: 1.0595 Acc: 0.6876
+
+Epoch ended: 2022-04-30 15:12:43.728719
+EarlyStopping counter: 4 out of 7
+Epoch 28/99
+----------
+train Loss: 0.6079 Acc: 0.8151
+val Loss: 1.0564 Acc: 0.6883
+
+Epoch ended: 2022-04-30 15:26:01.091564
+EarlyStopping counter: 5 out of 7
+Epoch 29/99
+----------
+train Loss: 0.6015 Acc: 0.8197
+val Loss: 1.0571 Acc: 0.6890
+
+Epoch ended: 2022-04-30 15:39:10.460047
+EarlyStopping counter: 6 out of 7
+Epoch 30/99
+----------
+train Loss: 0.5928 Acc: 0.8176
+val Loss: 1.0552 Acc: 0.6879
+
+Epoch ended: 2022-04-30 15:52:14.941522
+EarlyStopping counter: 7 out of 7
+Early stopping
+Training complete in 407m 50s
+Best val Loss: 1.051182 with Acc of 0.685000
+{'train': [2.2810472335134233, 1.5004227005300068, 1.2781386297373545, 1.1671521255657786, 1.089334627347333, 1.0342109416212355, 0.981333254348664, 0.9373276819075856, 0.8923937806061336, 0.8638266654951232, 0.8289152465405918, 0.8034567336241404, 0.7780128399885836, 0.7426440467437109, 0.7279304858474505, 0.6747359746978396, 0.6574835814535618, 0.6486713632586456, 0.6451775146027406, 0.6410951122996353, 0.636973753039326, 0.636193381001552, 0.632213751652411, 0.6182023292141301, 0.6292585604602382, 0.6205647114132132, 0.6253973254490466, 0.6096348874270916, 0.6079377634894281, 0.6014938895546255, 0.5928130199511846], 'val': [1.697200113818759, 1.4388360437892733, 1.3309295915421986, 1.2767134663604556, 1.2421819837320418, 1.2075080545175643, 1.1742896664710272, 1.1611468919685908, 1.1403635101658958, 1.1087120544342768, 1.0993361983980452, 1.1255324568067278, 1.1098857862608773, 1.0898428360621135, 1.0939888684522538, 1.0622823479629697, 1.0622703560761042, 1.0584632896241688, 1.0638469571159, 1.060260180916105, 1.0573075669152396, 1.0588082032544273, 1.062711667446863, 1.0511817634105682, 1.0543639532157354, 1.0557946122827984, 1.05461623555138, 1.059537871962502, 1.0564156075318654, 1.057093390396663, 1.0551568936733973]}
+{'train': [0.34595238095238096, 0.5545833333333333, 0.6104166666666667, 0.6408928571428572, 0.6617857142857143, 0.6814880952380953, 0.6977380952380953, 0.7128571428571429, 0.7244047619047619, 0.7321428571428571, 0.7454166666666666, 0.7497619047619047, 0.7580357142857143, 0.7692857142857142, 0.7741666666666667, 0.7933928571428571, 0.7992857142857143, 0.8006547619047619, 0.8013690476190476, 0.8027380952380953, 0.8056547619047619, 0.8063690476190476, 0.8067857142857143, 0.8123809523809524, 0.8075, 0.8108928571428572, 0.8072619047619047, 0.814047619047619, 0.8150595238095238, 0.8197023809523809, 0.8175595238095238], 'val': [0.5102380952380953, 0.5664285714285714, 0.599047619047619, 0.6052380952380952, 0.6204761904761905, 0.6238095238095238, 0.6423809523809524, 0.6480952380952381, 0.6502380952380953, 0.6588095238095238, 0.6630952380952381, 0.6588095238095238, 0.6661904761904762, 0.6673809523809524, 0.6721428571428572, 0.6823809523809524, 0.684047619047619, 0.6854761904761905, 0.6847619047619048, 0.6871428571428572, 0.6835714285714286, 0.6835714285714286, 0.6826190476190476, 0.685, 0.6869047619047619, 0.6869047619047619, 0.6869047619047619, 0.6876190476190476, 0.6883333333333334, 0.689047619047619, 0.6878571428571428]}
+num_workers: 8
+batch_size: 100
+
+Process finished with exit code 0
