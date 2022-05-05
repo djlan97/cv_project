@@ -42,17 +42,23 @@ def create_retirval_net(model, finetuned):
 
 def extractor(ret_model, data):
     since = time.time()
-    # read images images from a directory
+
+    # Read images images from a directory.
     list_imgs_names = os.listdir(data)
 
-    # create an array to store features
+    # Take number of model features.
+    #num_ftrs = ret_model.fc.in_features
+
+    # Create an array to store features.
     images_number = len(list_imgs_names)
     fea_all = np.zeros((images_number, 2048))
-    # define empy array to store image names
+
+    # Define empy array to store image names.
     image_all = []
-    # extract features
+
+    # Extract features.
     for ind, img_name in enumerate(list_imgs_names):
-        # print(img_name)
+
         img_path = os.path.join(data, img_name)
         image_np = Image.open(img_path)
         image_np = np.array(image_np)
@@ -60,6 +66,8 @@ def extractor(ret_model, data):
         image_np = torch.from_numpy(image_np).permute(2, 0, 1).float()
         image_np = Variable(image_np.unsqueeze(0))  # bs, c, h, w
         image_np = image_np.to(device)
+
+        # Pass image to the model.
         fea = ret_model(image_np)
         fea = fea.squeeze()
         fea = fea.cpu().data.numpy()
@@ -76,6 +84,8 @@ def extractor(ret_model, data):
 
 
 def save_features(feats, image_list, path):
+
+    # Save feature as a dictionary having image name as kay and feature vector as value.
     feats_dict = {image_list[i]: feats[i] for i in range(len(image_list))}
 
     with open(path, 'wb') as f:

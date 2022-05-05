@@ -150,14 +150,20 @@ if __name__ == '__main__':
     show_dataloader_example = False
     early_stopping_based_on_loss = True
     early_stopping_patience = 7
-    batch_size = 32
+    batch_size = 100
     num_workers = 8
-    lr = 0.001
+    lr = 0.01
     step_size = 7
-    model = 'resnet50'
+    model = 'resnet34'
 
     plt.ion()
 
+    labels_map = {0: 'moving',
+                  1: 'standing',
+                  2: 'nothing'
+                  }
+
+    '''
     labels_map = {0: 'baboon',
                   1: 'buffalo',
                   2: 'cheetah',
@@ -179,6 +185,7 @@ if __name__ == '__main__':
                   18: 'warthog',
                   19: 'wildebeest',
                   20: 'zebra'}
+    '''
 
     data_transforms = {
         'train': transforms.Compose([
@@ -202,7 +209,7 @@ if __name__ == '__main__':
     }
 
     data_dir = 'data/dataset'
-    image_datasets = {x: SerengetiDataset(os.path.join(data_dir, x + '.csv'), os.path.join(data_dir, x),
+    image_datasets = {x: SerengetiDataset(os.path.join(data_dir, x + '_d.csv'), os.path.join(data_dir, x),
                                           data_transforms[x])
                       for x in ['train', 'val']}
 
@@ -214,10 +221,9 @@ if __name__ == '__main__':
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-    # Get a batch of training data.
-    inputs, classes, _, _ = next(iter(dataloaders['train']))
-
     if show_dataloader_example:
+        # Get a batch of training data.
+        inputs, classes, _, _ = next(iter(dataloaders['train']))
         # Make a grid from batch
         out = torchvision.utils.make_grid(inputs)
 
@@ -237,7 +243,7 @@ if __name__ == '__main__':
     # The size of each output sample is set equal to classes number.
     num_ftrs = model_ft.fc.in_features
 
-    model_ft.fc = nn.Linear(num_ftrs, len(class_names))
+    model_ft.fc = nn.Linear(num_ftrs, len(image_datasets['train'].img_labels.category_id.unique()))
 
     model_ft = model_ft.to(device)
 
