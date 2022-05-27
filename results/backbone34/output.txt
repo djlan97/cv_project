@@ -1,0 +1,609 @@
+C:\Users\Dylan\anaconda3\envs\computer_vision\python.exe C:/Users/Dylan/Documents/GitHub/cv_project/Backbone34/backbone34.py
+start: 2022-05-09 08:34:17.628821
+Early stopping based on accuracy...
+Epoch 0/99
+----------
+train Loss: 3.7251 Acc: 0.3556 Acc_Specie: 0.1428 Acc_Descrizione: 0.5685
+val Loss: 3.4756 Acc: 0.4090 Acc_Specie: 0.1962 Acc_Descrizione: 0.6219
+Better val accuracy
+
+Validation Accuracy increased (0.0000 --> 0.4090).  Saving model ...
+
+
+Epoch ended: 2022-05-09 08:47:46.098136
+Epoch 1/99
+----------
+train Loss: 3.0610 Acc: 0.4535 Acc_Specie: 0.2820 Acc_Descrizione: 0.6251
+val Loss: 2.9781 Acc: 0.4751 Acc_Specie: 0.3102 Acc_Descrizione: 0.6400
+Better val accuracy
+
+Validation Accuracy increased (0.4090 --> 0.4751).  Saving model ...
+
+
+Epoch ended: 2022-05-09 09:00:52.979362
+Epoch 2/99
+----------
+train Loss: 2.7354 Acc: 0.5054 Acc_Specie: 0.3671 Acc_Descrizione: 0.6438
+val Loss: 2.8695 Acc: 0.4901 Acc_Specie: 0.3281 Acc_Descrizione: 0.6521
+Better val accuracy
+
+Validation Accuracy increased (0.4751 --> 0.4901).  Saving model ...
+
+
+Epoch ended: 2022-05-09 09:14:23.299423
+Epoch 3/99
+----------
+train Loss: 2.5090 Acc: 0.5418 Acc_Specie: 0.4304 Acc_Descrizione: 0.6532
+val Loss: 2.6384 Acc: 0.5394 Acc_Specie: 0.4317 Acc_Descrizione: 0.6471
+Better val accuracy
+
+Validation Accuracy increased (0.4901 --> 0.5394).  Saving model ...
+
+
+Epoch ended: 2022-05-09 09:27:43.711897
+Epoch 4/99
+----------
+train Loss: 2.3017 Acc: 0.5784 Acc_Specie: 0.4821 Acc_Descrizione: 0.6747
+val Loss: 2.6204 Acc: 0.5339 Acc_Specie: 0.4219 Acc_Descrizione: 0.6460
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 09:40:56.387907
+Epoch 5/99
+----------
+train Loss: 2.2014 Acc: 0.5974 Acc_Specie: 0.5122 Acc_Descrizione: 0.6826
+val Loss: 2.8029 Acc: 0.5176 Acc_Specie: 0.3690 Acc_Descrizione: 0.6662
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 09:54:15.744257
+Epoch 6/99
+----------
+train Loss: 2.0740 Acc: 0.6195 Acc_Specie: 0.5443 Acc_Descrizione: 0.6948
+val Loss: 2.2102 Acc: 0.5950 Acc_Specie: 0.5143 Acc_Descrizione: 0.6757
+Better val accuracy
+
+Validation Accuracy increased (0.5394 --> 0.5950).  Saving model ...
+
+
+Epoch ended: 2022-05-09 10:07:52.273187
+Epoch 7/99
+----------
+train Loss: 1.9552 Acc: 0.6400 Acc_Specie: 0.5768 Acc_Descrizione: 0.7033
+val Loss: 2.4700 Acc: 0.5752 Acc_Specie: 0.4779 Acc_Descrizione: 0.6726
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 10:21:15.279012
+Epoch 8/99
+----------
+train Loss: 1.9195 Acc: 0.6458 Acc_Specie: 0.5851 Acc_Descrizione: 0.7064
+val Loss: 2.2262 Acc: 0.5996 Acc_Specie: 0.5255 Acc_Descrizione: 0.6738
+Better val accuracy
+
+Validation Accuracy increased (0.5950 --> 0.5996).  Saving model ...
+
+
+Epoch ended: 2022-05-09 10:34:39.630344
+Epoch 9/99
+----------
+train Loss: 1.8107 Acc: 0.6649 Acc_Specie: 0.6194 Acc_Descrizione: 0.7103
+val Loss: 2.1900 Acc: 0.6077 Acc_Specie: 0.5502 Acc_Descrizione: 0.6652
+Better val accuracy
+
+Validation Accuracy increased (0.5996 --> 0.6077).  Saving model ...
+
+
+Epoch ended: 2022-05-09 10:47:58.611532
+Epoch 10/99
+----------
+train Loss: 1.7606 Acc: 0.6763 Acc_Specie: 0.6330 Acc_Descrizione: 0.7197
+val Loss: 2.1291 Acc: 0.6175 Acc_Specie: 0.5660 Acc_Descrizione: 0.6690
+Better val accuracy
+
+Validation Accuracy increased (0.6077 --> 0.6175).  Saving model ...
+
+
+Epoch ended: 2022-05-09 11:01:24.912507
+Epoch 11/99
+----------
+train Loss: 1.7028 Acc: 0.6840 Acc_Specie: 0.6439 Acc_Descrizione: 0.7240
+val Loss: 2.3389 Acc: 0.6057 Acc_Specie: 0.5286 Acc_Descrizione: 0.6829
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 11:14:39.976730
+Epoch 12/99
+----------
+train Loss: 1.6458 Acc: 0.6958 Acc_Specie: 0.6603 Acc_Descrizione: 0.7313
+val Loss: 2.0999 Acc: 0.6232 Acc_Specie: 0.5598 Acc_Descrizione: 0.6867
+Better val accuracy
+
+Validation Accuracy increased (0.6175 --> 0.6232).  Saving model ...
+
+
+Epoch ended: 2022-05-09 11:28:00.877366
+Epoch 13/99
+----------
+train Loss: 1.6145 Acc: 0.7010 Acc_Specie: 0.6725 Acc_Descrizione: 0.7294
+val Loss: 2.1245 Acc: 0.6250 Acc_Specie: 0.5671 Acc_Descrizione: 0.6829
+Better val accuracy
+
+Validation Accuracy increased (0.6232 --> 0.6250).  Saving model ...
+
+
+Epoch ended: 2022-05-09 11:41:15.125170
+Epoch 14/99
+----------
+train Loss: 1.5756 Acc: 0.7074 Acc_Specie: 0.6782 Acc_Descrizione: 0.7365
+val Loss: 2.0902 Acc: 0.6262 Acc_Specie: 0.5650 Acc_Descrizione: 0.6874
+Better val accuracy
+
+Validation Accuracy increased (0.6250 --> 0.6262).  Saving model ...
+
+
+Epoch ended: 2022-05-09 11:54:36.516780
+Epoch 15/99
+----------
+train Loss: 1.5309 Acc: 0.7148 Acc_Specie: 0.6889 Acc_Descrizione: 0.7407
+val Loss: 2.2266 Acc: 0.6074 Acc_Specie: 0.5412 Acc_Descrizione: 0.6736
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 12:08:00.411286
+Epoch 16/99
+----------
+train Loss: 1.5264 Acc: 0.7175 Acc_Specie: 0.6869 Acc_Descrizione: 0.7482
+val Loss: 2.0889 Acc: 0.6283 Acc_Specie: 0.5771 Acc_Descrizione: 0.6795
+Better val accuracy
+
+Validation Accuracy increased (0.6262 --> 0.6283).  Saving model ...
+
+
+Epoch ended: 2022-05-09 12:21:22.514664
+Epoch 17/99
+----------
+train Loss: 1.4691 Acc: 0.7284 Acc_Specie: 0.7062 Acc_Descrizione: 0.7506
+val Loss: 2.0673 Acc: 0.6389 Acc_Specie: 0.5890 Acc_Descrizione: 0.6888
+Better val accuracy
+
+Validation Accuracy increased (0.6283 --> 0.6389).  Saving model ...
+
+
+Epoch ended: 2022-05-09 12:34:49.551228
+Epoch 18/99
+----------
+train Loss: 1.4265 Acc: 0.7350 Acc_Specie: 0.7110 Acc_Descrizione: 0.7590
+val Loss: 2.1308 Acc: 0.6340 Acc_Specie: 0.5990 Acc_Descrizione: 0.6690
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 12:48:07.670144
+Epoch 19/99
+----------
+train Loss: 1.3753 Acc: 0.7433 Acc_Specie: 0.7267 Acc_Descrizione: 0.7599
+val Loss: 2.0567 Acc: 0.6457 Acc_Specie: 0.5998 Acc_Descrizione: 0.6917
+Better val accuracy
+
+Validation Accuracy increased (0.6389 --> 0.6457).  Saving model ...
+
+
+Epoch ended: 2022-05-09 13:01:42.185482
+Epoch 20/99
+----------
+train Loss: 1.1254 Acc: 0.7896 Acc_Specie: 0.7870 Acc_Descrizione: 0.7922
+val Loss: 1.8740 Acc: 0.6801 Acc_Specie: 0.6531 Acc_Descrizione: 0.7071
+Better val accuracy
+
+Validation Accuracy increased (0.6457 --> 0.6801).  Saving model ...
+
+
+Epoch ended: 2022-05-09 13:15:03.242588
+Epoch 21/99
+----------
+train Loss: 1.0125 Acc: 0.8115 Acc_Specie: 0.8105 Acc_Descrizione: 0.8124
+val Loss: 1.9136 Acc: 0.6840 Acc_Specie: 0.6602 Acc_Descrizione: 0.7079
+Better val accuracy
+
+Validation Accuracy increased (0.6801 --> 0.6840).  Saving model ...
+
+
+Epoch ended: 2022-05-09 13:28:21.333240
+Epoch 22/99
+----------
+train Loss: 0.9836 Acc: 0.8155 Acc_Specie: 0.8144 Acc_Descrizione: 0.8166
+val Loss: 1.9273 Acc: 0.6820 Acc_Specie: 0.6581 Acc_Descrizione: 0.7060
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 13:41:39.824124
+Epoch 23/99
+----------
+train Loss: 0.9468 Acc: 0.8235 Acc_Specie: 0.8223 Acc_Descrizione: 0.8247
+val Loss: 1.9591 Acc: 0.6825 Acc_Specie: 0.6590 Acc_Descrizione: 0.7060
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 13:55:03.910018
+Epoch 24/99
+----------
+train Loss: 0.9152 Acc: 0.8306 Acc_Specie: 0.8283 Acc_Descrizione: 0.8330
+val Loss: 2.0133 Acc: 0.6836 Acc_Specie: 0.6645 Acc_Descrizione: 0.7026
+
+EarlyStopping counter: 3 out of 7
+
+Epoch ended: 2022-05-09 14:08:28.574735
+Epoch 25/99
+----------
+train Loss: 0.8812 Acc: 0.8351 Acc_Specie: 0.8332 Acc_Descrizione: 0.8370
+val Loss: 2.0236 Acc: 0.6826 Acc_Specie: 0.6621 Acc_Descrizione: 0.7031
+
+EarlyStopping counter: 4 out of 7
+
+Epoch ended: 2022-05-09 14:21:44.934567
+Epoch 26/99
+----------
+train Loss: 0.8588 Acc: 0.8403 Acc_Specie: 0.8390 Acc_Descrizione: 0.8415
+val Loss: 2.0256 Acc: 0.6813 Acc_Specie: 0.6667 Acc_Descrizione: 0.6960
+
+EarlyStopping counter: 5 out of 7
+
+Epoch ended: 2022-05-09 14:35:10.454193
+Epoch 27/99
+----------
+train Loss: 0.8465 Acc: 0.8431 Acc_Specie: 0.8395 Acc_Descrizione: 0.8467
+val Loss: 2.0576 Acc: 0.6896 Acc_Specie: 0.6676 Acc_Descrizione: 0.7117
+Better val accuracy
+
+Validation Accuracy increased (0.6840 --> 0.6896).  Saving model ...
+
+
+Epoch ended: 2022-05-09 14:48:31.411383
+Epoch 28/99
+----------
+train Loss: 0.8240 Acc: 0.8469 Acc_Specie: 0.8450 Acc_Descrizione: 0.8489
+val Loss: 2.1326 Acc: 0.6810 Acc_Specie: 0.6617 Acc_Descrizione: 0.7002
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 15:01:52.064971
+Epoch 29/99
+----------
+train Loss: 0.8099 Acc: 0.8507 Acc_Specie: 0.8505 Acc_Descrizione: 0.8508
+val Loss: 2.0965 Acc: 0.6851 Acc_Specie: 0.6655 Acc_Descrizione: 0.7048
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 15:15:24.487291
+Epoch 30/99
+----------
+train Loss: 0.7870 Acc: 0.8564 Acc_Specie: 0.8537 Acc_Descrizione: 0.8591
+val Loss: 2.1483 Acc: 0.6842 Acc_Specie: 0.6681 Acc_Descrizione: 0.7002
+
+EarlyStopping counter: 3 out of 7
+
+Epoch ended: 2022-05-09 15:28:42.179206
+Epoch 31/99
+----------
+train Loss: 0.7568 Acc: 0.8596 Acc_Specie: 0.8589 Acc_Descrizione: 0.8602
+val Loss: 2.1331 Acc: 0.6843 Acc_Specie: 0.6702 Acc_Descrizione: 0.6983
+
+EarlyStopping counter: 4 out of 7
+
+Epoch ended: 2022-05-09 15:41:59.014998
+Epoch 32/99
+----------
+train Loss: 0.7256 Acc: 0.8650 Acc_Specie: 0.8626 Acc_Descrizione: 0.8675
+val Loss: 2.1992 Acc: 0.6845 Acc_Specie: 0.6636 Acc_Descrizione: 0.7055
+
+EarlyStopping counter: 5 out of 7
+
+Epoch ended: 2022-05-09 15:55:09.422247
+Epoch 33/99
+----------
+train Loss: 0.7227 Acc: 0.8668 Acc_Specie: 0.8646 Acc_Descrizione: 0.8689
+val Loss: 2.2717 Acc: 0.6857 Acc_Specie: 0.6655 Acc_Descrizione: 0.7060
+
+EarlyStopping counter: 6 out of 7
+
+Epoch ended: 2022-05-09 16:08:32.067128
+Epoch 34/99
+----------
+train Loss: 0.7069 Acc: 0.8722 Acc_Specie: 0.8689 Acc_Descrizione: 0.8755
+val Loss: 2.2993 Acc: 0.6911 Acc_Specie: 0.6698 Acc_Descrizione: 0.7124
+Better val accuracy
+
+Validation Accuracy increased (0.6896 --> 0.6911).  Saving model ...
+
+
+Epoch ended: 2022-05-09 16:21:54.818496
+Epoch 35/99
+----------
+train Loss: 0.6863 Acc: 0.8740 Acc_Specie: 0.8727 Acc_Descrizione: 0.8752
+val Loss: 2.2995 Acc: 0.6846 Acc_Specie: 0.6700 Acc_Descrizione: 0.6993
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 16:35:24.825676
+Epoch 36/99
+----------
+train Loss: 0.6658 Acc: 0.8773 Acc_Specie: 0.8740 Acc_Descrizione: 0.8807
+val Loss: 2.3653 Acc: 0.6893 Acc_Specie: 0.6681 Acc_Descrizione: 0.7105
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 16:48:40.660478
+Epoch 37/99
+----------
+train Loss: 0.6580 Acc: 0.8798 Acc_Specie: 0.8795 Acc_Descrizione: 0.8801
+val Loss: 2.2635 Acc: 0.6901 Acc_Specie: 0.6683 Acc_Descrizione: 0.7119
+
+EarlyStopping counter: 3 out of 7
+
+Epoch ended: 2022-05-09 17:02:06.970886
+Epoch 38/99
+----------
+train Loss: 0.6306 Acc: 0.8854 Acc_Specie: 0.8825 Acc_Descrizione: 0.8883
+val Loss: 2.4427 Acc: 0.6851 Acc_Specie: 0.6676 Acc_Descrizione: 0.7026
+
+EarlyStopping counter: 4 out of 7
+
+Epoch ended: 2022-05-09 17:15:21.655967
+Epoch 39/99
+----------
+train Loss: 0.6273 Acc: 0.8857 Acc_Specie: 0.8864 Acc_Descrizione: 0.8850
+val Loss: 2.3790 Acc: 0.6870 Acc_Specie: 0.6724 Acc_Descrizione: 0.7017
+
+EarlyStopping counter: 5 out of 7
+
+Epoch ended: 2022-05-09 17:28:43.599612
+Epoch 40/99
+----------
+train Loss: 0.5714 Acc: 0.8966 Acc_Specie: 0.8924 Acc_Descrizione: 0.9009
+val Loss: 2.4142 Acc: 0.6926 Acc_Specie: 0.6752 Acc_Descrizione: 0.7100
+Better val accuracy
+
+Validation Accuracy increased (0.6911 --> 0.6926).  Saving model ...
+
+
+Epoch ended: 2022-05-09 17:42:10.341523
+Epoch 41/99
+----------
+train Loss: 0.5469 Acc: 0.9018 Acc_Specie: 0.8974 Acc_Descrizione: 0.9061
+val Loss: 2.4690 Acc: 0.6908 Acc_Specie: 0.6736 Acc_Descrizione: 0.7081
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 17:55:54.611517
+Epoch 42/99
+----------
+train Loss: 0.5484 Acc: 0.9021 Acc_Specie: 0.8964 Acc_Descrizione: 0.9079
+val Loss: 2.5760 Acc: 0.6886 Acc_Specie: 0.6695 Acc_Descrizione: 0.7076
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 18:09:15.060233
+Epoch 43/99
+----------
+train Loss: 0.5356 Acc: 0.9044 Acc_Specie: 0.9031 Acc_Descrizione: 0.9057
+val Loss: 2.5092 Acc: 0.6901 Acc_Specie: 0.6752 Acc_Descrizione: 0.7050
+
+EarlyStopping counter: 3 out of 7
+
+Epoch ended: 2022-05-09 18:22:53.339623
+Epoch 44/99
+----------
+train Loss: 0.5385 Acc: 0.9028 Acc_Specie: 0.8989 Acc_Descrizione: 0.9067
+val Loss: 2.5011 Acc: 0.6927 Acc_Specie: 0.6757 Acc_Descrizione: 0.7098
+Better val accuracy
+
+Validation Accuracy increased (0.6926 --> 0.6927).  Saving model ...
+
+
+Epoch ended: 2022-05-09 18:36:10.148058
+Epoch 45/99
+----------
+train Loss: 0.5505 Acc: 0.9008 Acc_Specie: 0.8949 Acc_Descrizione: 0.9067
+val Loss: 2.5389 Acc: 0.6937 Acc_Specie: 0.6745 Acc_Descrizione: 0.7129
+Better val accuracy
+
+Validation Accuracy increased (0.6927 --> 0.6937).  Saving model ...
+
+
+Epoch ended: 2022-05-09 18:49:07.799285
+Epoch 46/99
+----------
+train Loss: 0.5335 Acc: 0.9044 Acc_Specie: 0.8997 Acc_Descrizione: 0.9091
+val Loss: 2.5504 Acc: 0.6944 Acc_Specie: 0.6767 Acc_Descrizione: 0.7121
+Better val accuracy
+
+Validation Accuracy increased (0.6937 --> 0.6944).  Saving model ...
+
+
+Epoch ended: 2022-05-09 19:02:22.380300
+Epoch 47/99
+----------
+train Loss: 0.5088 Acc: 0.9079 Acc_Specie: 0.9060 Acc_Descrizione: 0.9099
+val Loss: 2.5778 Acc: 0.6944 Acc_Specie: 0.6752 Acc_Descrizione: 0.7136
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 19:15:53.524763
+Epoch 48/99
+----------
+train Loss: 0.5208 Acc: 0.9073 Acc_Specie: 0.9031 Acc_Descrizione: 0.9115
+val Loss: 2.5614 Acc: 0.6923 Acc_Specie: 0.6752 Acc_Descrizione: 0.7093
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 19:29:10.857073
+Epoch 49/99
+----------
+train Loss: 0.5105 Acc: 0.9088 Acc_Specie: 0.9046 Acc_Descrizione: 0.9130
+val Loss: 2.5833 Acc: 0.6929 Acc_Specie: 0.6762 Acc_Descrizione: 0.7095
+
+EarlyStopping counter: 3 out of 7
+
+Epoch ended: 2022-05-09 19:42:27.314160
+Epoch 50/99
+----------
+train Loss: 0.5059 Acc: 0.9099 Acc_Specie: 0.9060 Acc_Descrizione: 0.9138
+val Loss: 2.5559 Acc: 0.6936 Acc_Specie: 0.6748 Acc_Descrizione: 0.7124
+
+EarlyStopping counter: 4 out of 7
+
+Epoch ended: 2022-05-09 19:55:57.662439
+Epoch 51/99
+----------
+train Loss: 0.5070 Acc: 0.9100 Acc_Specie: 0.9061 Acc_Descrizione: 0.9139
+val Loss: 2.5893 Acc: 0.6949 Acc_Specie: 0.6764 Acc_Descrizione: 0.7133
+Better val accuracy
+
+Validation Accuracy increased (0.6944 --> 0.6949).  Saving model ...
+
+
+Epoch ended: 2022-05-09 20:09:26.296299
+Epoch 52/99
+----------
+train Loss: 0.5010 Acc: 0.9110 Acc_Specie: 0.9066 Acc_Descrizione: 0.9155
+val Loss: 2.6038 Acc: 0.6952 Acc_Specie: 0.6786 Acc_Descrizione: 0.7119
+Better val accuracy
+
+Validation Accuracy increased (0.6949 --> 0.6952).  Saving model ...
+
+
+Epoch ended: 2022-05-09 20:22:51.592890
+Epoch 53/99
+----------
+train Loss: 0.4985 Acc: 0.9100 Acc_Specie: 0.9058 Acc_Descrizione: 0.9142
+val Loss: 2.6246 Acc: 0.6954 Acc_Specie: 0.6771 Acc_Descrizione: 0.7136
+Better val accuracy
+
+Validation Accuracy increased (0.6952 --> 0.6954).  Saving model ...
+
+
+Epoch ended: 2022-05-09 20:36:17.464892
+Epoch 54/99
+----------
+train Loss: 0.4961 Acc: 0.9112 Acc_Specie: 0.9064 Acc_Descrizione: 0.9160
+val Loss: 2.5962 Acc: 0.6945 Acc_Specie: 0.6781 Acc_Descrizione: 0.7110
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 20:49:42.134222
+Epoch 55/99
+----------
+train Loss: 0.5038 Acc: 0.9106 Acc_Specie: 0.9063 Acc_Descrizione: 0.9148
+val Loss: 2.6285 Acc: 0.6960 Acc_Specie: 0.6764 Acc_Descrizione: 0.7155
+Better val accuracy
+
+Validation Accuracy increased (0.6954 --> 0.6960).  Saving model ...
+
+
+Epoch ended: 2022-05-09 21:03:25.708671
+Epoch 56/99
+----------
+train Loss: 0.4921 Acc: 0.9109 Acc_Specie: 0.9073 Acc_Descrizione: 0.9145
+val Loss: 2.6434 Acc: 0.6927 Acc_Specie: 0.6769 Acc_Descrizione: 0.7086
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 21:16:53.603729
+Epoch 57/99
+----------
+train Loss: 0.4910 Acc: 0.9128 Acc_Specie: 0.9064 Acc_Descrizione: 0.9192
+val Loss: 2.6658 Acc: 0.6956 Acc_Specie: 0.6783 Acc_Descrizione: 0.7129
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 21:30:12.687340
+Epoch 58/99
+----------
+train Loss: 0.4846 Acc: 0.9121 Acc_Specie: 0.9073 Acc_Descrizione: 0.9169
+val Loss: 2.6208 Acc: 0.6968 Acc_Specie: 0.6793 Acc_Descrizione: 0.7143
+Better val accuracy
+
+Validation Accuracy increased (0.6960 --> 0.6968).  Saving model ...
+
+
+Epoch ended: 2022-05-09 21:43:42.383512
+Epoch 59/99
+----------
+train Loss: 0.4831 Acc: 0.9146 Acc_Specie: 0.9096 Acc_Descrizione: 0.9197
+val Loss: 2.6523 Acc: 0.6942 Acc_Specie: 0.6786 Acc_Descrizione: 0.7098
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 21:57:03.630795
+Epoch 60/99
+----------
+train Loss: 0.4793 Acc: 0.9140 Acc_Specie: 0.9117 Acc_Descrizione: 0.9163
+val Loss: 2.6259 Acc: 0.6946 Acc_Specie: 0.6755 Acc_Descrizione: 0.7138
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 22:11:32.659238
+Epoch 61/99
+----------
+train Loss: 0.4739 Acc: 0.9153 Acc_Specie: 0.9118 Acc_Descrizione: 0.9189
+val Loss: 2.6367 Acc: 0.6942 Acc_Specie: 0.6767 Acc_Descrizione: 0.7117
+
+EarlyStopping counter: 3 out of 7
+
+Epoch ended: 2022-05-09 22:26:06.335626
+Epoch 62/99
+----------
+train Loss: 0.4763 Acc: 0.9153 Acc_Specie: 0.9107 Acc_Descrizione: 0.9198
+val Loss: 2.6222 Acc: 0.6954 Acc_Specie: 0.6769 Acc_Descrizione: 0.7138
+
+EarlyStopping counter: 4 out of 7
+
+Epoch ended: 2022-05-09 22:40:43.278923
+Epoch 63/99
+----------
+train Loss: 0.4661 Acc: 0.9156 Acc_Specie: 0.9121 Acc_Descrizione: 0.9190
+val Loss: 2.6616 Acc: 0.6937 Acc_Specie: 0.6752 Acc_Descrizione: 0.7121
+
+EarlyStopping counter: 5 out of 7
+
+Epoch ended: 2022-05-09 22:55:03.193487
+Epoch 64/99
+----------
+train Loss: 0.4774 Acc: 0.9152 Acc_Specie: 0.9104 Acc_Descrizione: 0.9200
+val Loss: 2.6868 Acc: 0.6939 Acc_Specie: 0.6755 Acc_Descrizione: 0.7124
+
+EarlyStopping counter: 6 out of 7
+
+Epoch ended: 2022-05-09 23:09:34.693573
+Epoch 65/99
+----------
+train Loss: 0.4656 Acc: 0.9193 Acc_Specie: 0.9132 Acc_Descrizione: 0.9253
+val Loss: 2.6494 Acc: 0.6938 Acc_Specie: 0.6752 Acc_Descrizione: 0.7124
+
+EarlyStopping counter: 7 out of 7
+Early stopping
+[3.725065691130502, 3.060997502009074, 2.735436767623538, 2.5089597452254524, 2.301734056926909, 2.2014388532865614, 2.0740410242761884, 1.955249361764817, 1.919529418150584, 1.8106572832380021, 1.7606105821473257, 1.7028295312608992, 1.6457597698484148, 1.6144765746025813, 1.5755930923280261, 1.530863610903422, 1.5263944370406015, 1.4691334610893614, 1.4264830311139425, 1.375250306015923, 1.1253660534109389, 1.0125122876394363, 0.9835689456689926, 0.9467935303846995, 0.915156630674998, 0.8812243481477101, 0.8588324038755326, 0.8465132148492904, 0.8239963931696755, 0.8098549919469016, 0.7870082352842603, 0.7567615751709257, 0.7256081954354332, 0.7226853014457794, 0.7069217134089697, 0.686283311815489, 0.6657562277146748, 0.657983755781537, 0.630577943722407, 0.627318925516946, 0.5714490566934858, 0.5468845801694052, 0.5483765173526037, 0.5356076075917199, 0.5385362767037891, 0.550510813508715, 0.533498114205542, 0.5088139504903839, 0.5207816333997817, 0.5105257953916277, 0.5059433329673041, 0.5070382680211748, 0.5010493900804293, 0.49854806768042703, 0.49613104803221564, 0.5038017976851691, 0.49212441614695956, 0.491025468423253, 0.4845696244921003, 0.48314857944136574, 0.47929707176628567, 0.4738505330823717, 0.47632662050780794, 0.4661054291895458, 0.477378382285436, 0.4655793638456435]
+[tensor(0.4090, device='cuda:0', dtype=torch.float64), tensor(0.4751, device='cuda:0', dtype=torch.float64), tensor(0.4901, device='cuda:0', dtype=torch.float64), tensor(0.5394, device='cuda:0', dtype=torch.float64), tensor(0.5339, device='cuda:0', dtype=torch.float64), tensor(0.5176, device='cuda:0', dtype=torch.float64), tensor(0.5950, device='cuda:0', dtype=torch.float64), tensor(0.5752, device='cuda:0', dtype=torch.float64), tensor(0.5996, device='cuda:0', dtype=torch.float64), tensor(0.6077, device='cuda:0', dtype=torch.float64), tensor(0.6175, device='cuda:0', dtype=torch.float64), tensor(0.6057, device='cuda:0', dtype=torch.float64), tensor(0.6232, device='cuda:0', dtype=torch.float64), tensor(0.6250, device='cuda:0', dtype=torch.float64), tensor(0.6262, device='cuda:0', dtype=torch.float64), tensor(0.6074, device='cuda:0', dtype=torch.float64), tensor(0.6283, device='cuda:0', dtype=torch.float64), tensor(0.6389, device='cuda:0', dtype=torch.float64), tensor(0.6340, device='cuda:0', dtype=torch.float64), tensor(0.6457, device='cuda:0', dtype=torch.float64), tensor(0.6801, device='cuda:0', dtype=torch.float64), tensor(0.6840, device='cuda:0', dtype=torch.float64), tensor(0.6820, device='cuda:0', dtype=torch.float64), tensor(0.6825, device='cuda:0', dtype=torch.float64), tensor(0.6836, device='cuda:0', dtype=torch.float64), tensor(0.6826, device='cuda:0', dtype=torch.float64), tensor(0.6813, device='cuda:0', dtype=torch.float64), tensor(0.6896, device='cuda:0', dtype=torch.float64), tensor(0.6810, device='cuda:0', dtype=torch.float64), tensor(0.6851, device='cuda:0', dtype=torch.float64), tensor(0.6842, device='cuda:0', dtype=torch.float64), tensor(0.6843, device='cuda:0', dtype=torch.float64), tensor(0.6845, device='cuda:0', dtype=torch.float64), tensor(0.6857, device='cuda:0', dtype=torch.float64), tensor(0.6911, device='cuda:0', dtype=torch.float64), tensor(0.6846, device='cuda:0', dtype=torch.float64), tensor(0.6893, device='cuda:0', dtype=torch.float64), tensor(0.6901, device='cuda:0', dtype=torch.float64), tensor(0.6851, device='cuda:0', dtype=torch.float64), tensor(0.6870, device='cuda:0', dtype=torch.float64), tensor(0.6926, device='cuda:0', dtype=torch.float64), tensor(0.6908, device='cuda:0', dtype=torch.float64), tensor(0.6886, device='cuda:0', dtype=torch.float64), tensor(0.6901, device='cuda:0', dtype=torch.float64), tensor(0.6927, device='cuda:0', dtype=torch.float64), tensor(0.6937, device='cuda:0', dtype=torch.float64), tensor(0.6944, device='cuda:0', dtype=torch.float64), tensor(0.6944, device='cuda:0', dtype=torch.float64), tensor(0.6923, device='cuda:0', dtype=torch.float64), tensor(0.6929, device='cuda:0', dtype=torch.float64), tensor(0.6936, device='cuda:0', dtype=torch.float64), tensor(0.6949, device='cuda:0', dtype=torch.float64), tensor(0.6952, device='cuda:0', dtype=torch.float64), tensor(0.6954, device='cuda:0', dtype=torch.float64), tensor(0.6945, device='cuda:0', dtype=torch.float64), tensor(0.6960, device='cuda:0', dtype=torch.float64), tensor(0.6927, device='cuda:0', dtype=torch.float64), tensor(0.6956, device='cuda:0', dtype=torch.float64), tensor(0.6968, device='cuda:0', dtype=torch.float64), tensor(0.6942, device='cuda:0', dtype=torch.float64), tensor(0.6946, device='cuda:0', dtype=torch.float64), tensor(0.6942, device='cuda:0', dtype=torch.float64), tensor(0.6954, device='cuda:0', dtype=torch.float64), tensor(0.6937, device='cuda:0', dtype=torch.float64), tensor(0.6939, device='cuda:0', dtype=torch.float64), tensor(0.6938, device='cuda:0', dtype=torch.float64)]
+Training complete in 889m 50s
+Best val Loss: 2.620815 with Acc of 0.696786
+
+Process finished with exit code 0
+
+accuracies = {
+        'train': [0.3556, 0.4535, 0.5054, 0.5418, 0.5784, 0.5974, 0.6195, 0.6400, 0.6458, 0.6649, 0.6763, 0.6840,
+                  0.6958, 0.7010, 0.7074, 0.7148, 0.7175, 0.7284, 0.7350, 0.7433, 0.7896, 0.8115, 0.8155, 0.8235,
+                  0.8306, 0.8351, 0.8403, 0.8431, 0.8469, 0.8507, 0.8564, 0.8596, 0.8650, 0.8668, 0.8722, 0.8740,
+                  0.8773, 0.8798, 0.8854, 0.8857, 0.8966, 0.9018, 0.9021, 0.9044, 0.9028, 0.9008, 0.9044, 0.9079,
+                  0.9073, 0.9088, 0.9099, 0.9100, 0.9110, 0.9100, 0.9112, 0.9106, 0.9109, 0.9128, 0.9121, 0.9146,
+                  0.9140, 0.9153, 0.9153, 0.9156, 0.9152, 0.9193],
+        'train_spec':[0.1428,0.2820,0.3671,0.4304,0.4821,0.5122,0.5443,0.5768,0.5851,0.6194,0.6330,0.6439,0.6603,0.6725,0.6782,0.6889,0.6869,0.7062,0.7110,0.7267,0.7870,0.8105,0.8144,0.8223,0.8283,0.8332,0.8390,0.8395,0.8450,0.8505,0.8537,0.8589,0.8626,0.8646,0.8689,0.8727,0.8740,0.8795,0.8825,0.8864,0.8924,0.8974,0.8964,0.9031,0.8989,0.8949,0.8997,0.9060,0.9031,0.9046,0.9060,0.9061,0.9066,0.9058,0.9064,0.9063,0.9073,0.9064,0.9073,0.9096,0.9117,0.9118,0.9107,0.9121,0.9104,0.9132],
+        'train_desc':[0.5685,0.6251,0.6438,0.6532,0.6747,0.6826,0.6948,0.7033,0.7064,0.7103,0.7197,0.7240,0.7313,0.7294,0.7365,0.7407,0.7482,0.7506,0.7590,0.7599,0.7922,0.8124,0.8166,0.8247,0.8330,0.8370,0.8415,0.8467,0.8489,0.8508,0.8591,0.8602,0.8675,0.8689,0.8755,0.8752,0.8807,0.8801,0.8883,0.8850,0.9009,0.9061,0.9079,0.9057,0.9067,0.9067,0.9091,0.9099,0.9115,0.9130,0.9138,0.9139,0.9155,0.9142,0.9160,0.9148,0.9145,0.9192,0.9169,0.9197,0.9163,0.9189,0.9198,0.9190,0.9200,0.9253],
+        'val': [0.4090, 0.4751, 0.4901, 0.5394, 0.5339, 0.5176, 0.5950, 0.5752, 0.5996, 0.6077, 0.6175, 0.6057, 0.6232,
+                0.6250, 0.6262, 0.6074, 0.6283, 0.6389, 0.6340, 0.6457, 0.6801, 0.6840, 0.6820, 0.6825, 0.6836, 0.6826,
+                0.6813, 0.6896, 0.6810, 0.6851, 0.6842, 0.6843, 0.6845, 0.6857, 0.6811, 0.6846, 0.6893, 0.6901, 0.6851,
+                0.6870, 0.6926, 0.6908, 0.6886, 0.6901, 0.6927, 0.6937, 0.6944, 0.6944, 0.6923, 0.6929, 0.6936, 0.6949,
+                0.6952, 0.6954, 0.6945, 0.6960, 0.6927, 0.6956, 0.6968, 0.6942, 0.6946, 0.6942, 0.6954, 0.6937, 0.6939,
+                0.6938],
+        'val_spec':[0.1962,0.3102,0.3281,0.4317,0.4219,0.3690,0.5143,0.4779,0.5255,0.5502,0.5660,0.5286,0.5598,0.5671,0.5650,0.5412,0.5771,0.5890,0.5990,0.5998,0.6531,0.6602,0.6581,0.6590,0.6645,0.6621,0.6667,0.6676,0.6617,0.6655,0.6681,0.6702,0.6636,0.6655,0.6698,0.6700,0.6681,0.6683,0.6676,0.6724,0.6752,0.6736,0.6695,0.6752,0.6757,0.6745,0.6767,0.6752,0.6752,0.6762,0.6748,0.6764,0.6786,0.6771,0.6781,0.6764,0.6769,0.6783,0.6793,0.6786,0.6755,0.6767,0.6769,0.6752,0.6755,0.6752],
+        'val_desc':[0.6219,0.6400,0.6521,0.6471,0.6460,0.6662,0.6757,0.6726,0.6738,0.6652,0.6690,0.6829,0.6867,0.6829,0.6874,0.6736,0.6795,0.6888,0.6690,0.6917,0.7071,0.7079,0.7060,0.7060,0.7026,0.7031,0.6960,0.7117,0.7002,0.7048,0.7002,0.6983,0.7055,0.7060,0.7124,0.6993,0.7105,0.7119,0.7026,0.7017,0.7100,0.7081,0.7076,0.7050,0.7098,0.7129,0.7121,0.7136,0.7093,0.7095,0.7124,0.7133,0.7119,0.7136,0.7110,0.7155,0.7086,0.7129,0.7143,0.7098,0.7138,0.7117,0.7138,0.7121,0.7124,0.7124]
+    }

@@ -1,0 +1,296 @@
+C:\Users\elia1\anaconda3\envs\computer_vision\python.exe C:/Users/elia1/Desktop/cv_project/34BackboneWithBrances/34BackboneWithBranches.py
+start: 2022-05-09 08:03:14.829692
+Early stopping based on accuracy...
+Epoch 0/99
+----------
+train Loss: 7.9329 Acc: 0.4795 Acc_MajorVoting: 0.3580
+val Loss: 7.0661 Acc: 0.5095 Acc_Specie_First: 0.3562 Acc_Specie_Second: 0.3924 Acc_Specie_Final: 0.2893 Acc_Specie_MajorVoting: 0.3976 Acc_Descrizione: 0.6214
+Better val accuracy
+
+Validation Accuracy increased (0.0000 --> 0.5095).  Saving model ...
+
+
+Epoch ended: 2022-05-09 08:13:04.500676
+Epoch 1/99
+----------
+train Loss: 6.5018 Acc: 0.5489 Acc_MajorVoting: 0.4613
+val Loss: 6.8923 Acc: 0.5393 Acc_Specie_First: 0.3160 Acc_Specie_Second: 0.4226 Acc_Specie_Final: 0.3517 Acc_Specie_MajorVoting: 0.4155 Acc_Descrizione: 0.6631
+Better val accuracy
+
+Validation Accuracy increased (0.5095 --> 0.5393).  Saving model ...
+
+
+Epoch ended: 2022-05-09 08:22:42.437014
+Epoch 2/99
+----------
+train Loss: 5.9897 Acc: 0.5867 Acc_MajorVoting: 0.5117
+val Loss: 6.9365 Acc: 0.5387 Acc_Specie_First: 0.3198 Acc_Specie_Second: 0.4340 Acc_Specie_Final: 0.3624 Acc_Specie_MajorVoting: 0.4326 Acc_Descrizione: 0.6448
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 08:32:20.067283
+Epoch 3/99
+----------
+train Loss: 5.6538 Acc: 0.6079 Acc_MajorVoting: 0.5495
+val Loss: 6.3061 Acc: 0.5611 Acc_Specie_First: 0.3707 Acc_Specie_Second: 0.4740 Acc_Specie_Final: 0.4433 Acc_Specie_MajorVoting: 0.4857 Acc_Descrizione: 0.6364
+Better val accuracy
+
+Validation Accuracy increased (0.5393 --> 0.5611).  Saving model ...
+
+
+Epoch ended: 2022-05-09 08:42:06.620565
+Epoch 4/99
+----------
+train Loss: 5.4467 Acc: 0.6257 Acc_MajorVoting: 0.5751
+val Loss: 6.0059 Acc: 0.6001 Acc_Specie_First: 0.3924 Acc_Specie_Second: 0.4976 Acc_Specie_Final: 0.4760 Acc_Specie_MajorVoting: 0.5183 Acc_Descrizione: 0.6819
+Better val accuracy
+
+Validation Accuracy increased (0.5611 --> 0.6001).  Saving model ...
+
+
+Epoch ended: 2022-05-09 08:51:53.183848
+Epoch 5/99
+----------
+train Loss: 5.2044 Acc: 0.6484 Acc_MajorVoting: 0.6059
+val Loss: 6.0863 Acc: 0.5880 Acc_Specie_First: 0.3888 Acc_Specie_Second: 0.5110 Acc_Specie_Final: 0.4812 Acc_Specie_MajorVoting: 0.5302 Acc_Descrizione: 0.6457
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 09:01:32.883584
+Epoch 6/99
+----------
+train Loss: 5.0985 Acc: 0.6543 Acc_MajorVoting: 0.6139
+val Loss: 5.9613 Acc: 0.5989 Acc_Specie_First: 0.4057 Acc_Specie_Second: 0.4990 Acc_Specie_Final: 0.4879 Acc_Specie_MajorVoting: 0.5314 Acc_Descrizione: 0.6664
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 09:11:13.502527
+Epoch 7/99
+----------
+train Loss: 4.9295 Acc: 0.6703 Acc_MajorVoting: 0.6326
+val Loss: 6.0563 Acc: 0.5967 Acc_Specie_First: 0.3831 Acc_Specie_Second: 0.4826 Acc_Specie_Final: 0.4850 Acc_Specie_MajorVoting: 0.5145 Acc_Descrizione: 0.6788
+
+EarlyStopping counter: 3 out of 7
+
+Epoch ended: 2022-05-09 09:21:02.360328
+Epoch 8/99
+----------
+train Loss: 4.8851 Acc: 0.6759 Acc_MajorVoting: 0.6406
+val Loss: 5.6827 Acc: 0.6096 Acc_Specie_First: 0.4210 Acc_Specie_Second: 0.5310 Acc_Specie_Final: 0.5310 Acc_Specie_MajorVoting: 0.5552 Acc_Descrizione: 0.6640
+Better val accuracy
+
+Validation Accuracy increased (0.6001 --> 0.6096).  Saving model ...
+
+
+Epoch ended: 2022-05-09 09:30:42.184092
+Epoch 9/99
+----------
+train Loss: 4.6709 Acc: 0.6872 Acc_MajorVoting: 0.6606
+val Loss: 5.6661 Acc: 0.6300 Acc_Specie_First: 0.3974 Acc_Specie_Second: 0.5271 Acc_Specie_Final: 0.5376 Acc_Specie_MajorVoting: 0.5671 Acc_Descrizione: 0.6929
+Better val accuracy
+
+Validation Accuracy increased (0.6096 --> 0.6300).  Saving model ...
+
+
+Epoch ended: 2022-05-09 09:40:35.130815
+Epoch 10/99
+----------
+train Loss: 4.5953 Acc: 0.6990 Acc_MajorVoting: 0.6664
+val Loss: 6.8221 Acc: 0.5640 Acc_Specie_First: 0.3440 Acc_Specie_Second: 0.4360 Acc_Specie_Final: 0.4257 Acc_Specie_MajorVoting: 0.4726 Acc_Descrizione: 0.6555
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 09:50:11.936898
+Epoch 11/99
+----------
+train Loss: 4.5904 Acc: 0.6966 Acc_MajorVoting: 0.6667
+val Loss: 5.8181 Acc: 0.6194 Acc_Specie_First: 0.3931 Acc_Specie_Second: 0.5464 Acc_Specie_Final: 0.5229 Acc_Specie_MajorVoting: 0.5610 Acc_Descrizione: 0.6779
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 09:59:52.496828
+Epoch 12/99
+----------
+train Loss: 4.4235 Acc: 0.7089 Acc_MajorVoting: 0.6892
+val Loss: 6.0154 Acc: 0.6080 Acc_Specie_First: 0.3655 Acc_Specie_Second: 0.5007 Acc_Specie_Final: 0.5086 Acc_Specie_MajorVoting: 0.5438 Acc_Descrizione: 0.6721
+
+EarlyStopping counter: 3 out of 7
+
+Epoch ended: 2022-05-09 10:09:31.637437
+Epoch 13/99
+----------
+train Loss: 4.3463 Acc: 0.7149 Acc_MajorVoting: 0.6979
+val Loss: 5.3522 Acc: 0.6356 Acc_Specie_First: 0.4362 Acc_Specie_Second: 0.5536 Acc_Specie_Final: 0.5717 Acc_Specie_MajorVoting: 0.5921 Acc_Descrizione: 0.6790
+Better val accuracy
+
+Validation Accuracy increased (0.6300 --> 0.6356).  Saving model ...
+
+
+Epoch ended: 2022-05-09 10:19:20.677252
+Epoch 14/99
+----------
+train Loss: 4.2272 Acc: 0.7250 Acc_MajorVoting: 0.7051
+val Loss: 5.7334 Acc: 0.6152 Acc_Specie_First: 0.4352 Acc_Specie_Second: 0.5333 Acc_Specie_Final: 0.5236 Acc_Specie_MajorVoting: 0.5602 Acc_Descrizione: 0.6702
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 10:29:05.957246
+Epoch 15/99
+----------
+train Loss: 4.1957 Acc: 0.7276 Acc_MajorVoting: 0.7085
+val Loss: 5.6103 Acc: 0.6280 Acc_Specie_First: 0.4183 Acc_Specie_Second: 0.5483 Acc_Specie_Final: 0.5567 Acc_Specie_MajorVoting: 0.5876 Acc_Descrizione: 0.6683
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 10:38:52.744580
+Epoch 16/99
+----------
+train Loss: 4.0970 Acc: 0.7391 Acc_MajorVoting: 0.7240
+val Loss: 5.2771 Acc: 0.6448 Acc_Specie_First: 0.4643 Acc_Specie_Second: 0.5729 Acc_Specie_Final: 0.5688 Acc_Specie_MajorVoting: 0.6024 Acc_Descrizione: 0.6871
+Better val accuracy
+
+Validation Accuracy increased (0.6356 --> 0.6448).  Saving model ...
+
+
+Epoch ended: 2022-05-09 10:48:40.722183
+Epoch 17/99
+----------
+train Loss: 4.0412 Acc: 0.7421 Acc_MajorVoting: 0.7309
+val Loss: 5.7081 Acc: 0.6240 Acc_Specie_First: 0.4186 Acc_Specie_Second: 0.5567 Acc_Specie_Final: 0.5460 Acc_Specie_MajorVoting: 0.5795 Acc_Descrizione: 0.6686
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 10:58:24.467831
+Epoch 18/99
+----------
+train Loss: 4.0264 Acc: 0.7451 Acc_MajorVoting: 0.7302
+val Loss: 5.3620 Acc: 0.6396 Acc_Specie_First: 0.4695 Acc_Specie_Second: 0.5607 Acc_Specie_Final: 0.5719 Acc_Specie_MajorVoting: 0.5995 Acc_Descrizione: 0.6798
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 11:08:02.714239
+Epoch 19/99
+----------
+train Loss: 3.8973 Acc: 0.7566 Acc_MajorVoting: 0.7418
+val Loss: 5.2243 Acc: 0.6396 Acc_Specie_First: 0.4724 Acc_Specie_Second: 0.5736 Acc_Specie_Final: 0.5836 Acc_Specie_MajorVoting: 0.6157 Acc_Descrizione: 0.6636
+
+EarlyStopping counter: 3 out of 7
+
+Epoch ended: 2022-05-09 11:17:38.239033
+Epoch 20/99
+----------
+train Loss: 3.4763 Acc: 0.7944 Acc_MajorVoting: 0.7839
+val Loss: 4.6612 Acc: 0.6856 Acc_Specie_First: 0.5288 Acc_Specie_Second: 0.6176 Acc_Specie_Final: 0.6564 Acc_Specie_MajorVoting: 0.6610 Acc_Descrizione: 0.7102
+Better val accuracy
+
+Validation Accuracy increased (0.6448 --> 0.6856).  Saving model ...
+
+
+Epoch ended: 2022-05-09 11:27:36.518959
+Epoch 21/99
+----------
+train Loss: 3.2988 Acc: 0.8138 Acc_MajorVoting: 0.8076
+val Loss: 4.6369 Acc: 0.6858 Acc_Specie_First: 0.5305 Acc_Specie_Second: 0.6198 Acc_Specie_Final: 0.6550 Acc_Specie_MajorVoting: 0.6679 Acc_Descrizione: 0.7038
+Better val accuracy
+
+Validation Accuracy increased (0.6856 --> 0.6858).  Saving model ...
+
+
+Epoch ended: 2022-05-09 11:37:18.604233
+Epoch 22/99
+----------
+train Loss: 3.2239 Acc: 0.8191 Acc_MajorVoting: 0.8118
+val Loss: 4.6210 Acc: 0.6929 Acc_Specie_First: 0.5386 Acc_Specie_Second: 0.6252 Acc_Specie_Final: 0.6600 Acc_Specie_MajorVoting: 0.6795 Acc_Descrizione: 0.7062
+Better val accuracy
+
+Validation Accuracy increased (0.6858 --> 0.6929).  Saving model ...
+
+
+Epoch ended: 2022-05-09 11:46:56.852641
+Epoch 23/99
+----------
+train Loss: 3.1622 Acc: 0.8255 Acc_MajorVoting: 0.8192
+val Loss: 4.6806 Acc: 0.6918 Acc_Specie_First: 0.5348 Acc_Specie_Second: 0.6221 Acc_Specie_Final: 0.6662 Acc_Specie_MajorVoting: 0.6779 Acc_Descrizione: 0.7057
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 11:56:42.739772
+Epoch 24/99
+----------
+train Loss: 3.1213 Acc: 0.8303 Acc_MajorVoting: 0.8241
+val Loss: 4.6610 Acc: 0.6955 Acc_Specie_First: 0.5336 Acc_Specie_Second: 0.6210 Acc_Specie_Final: 0.6683 Acc_Specie_MajorVoting: 0.6826 Acc_Descrizione: 0.7083
+Better val accuracy
+
+Validation Accuracy increased (0.6929 --> 0.6955).  Saving model ...
+
+
+Epoch ended: 2022-05-09 12:06:20.190001
+Epoch 25/99
+----------
+train Loss: 3.0752 Acc: 0.8367 Acc_MajorVoting: 0.8323
+val Loss: 4.7375 Acc: 0.6885 Acc_Specie_First: 0.5338 Acc_Specie_Second: 0.6243 Acc_Specie_Final: 0.6610 Acc_Specie_MajorVoting: 0.6774 Acc_Descrizione: 0.6995
+
+EarlyStopping counter: 1 out of 7
+
+Epoch ended: 2022-05-09 12:16:07.432438
+Epoch 26/99
+----------
+train Loss: 3.0532 Acc: 0.8391 Acc_MajorVoting: 0.8354
+val Loss: 4.7323 Acc: 0.6906 Acc_Specie_First: 0.5388 Acc_Specie_Second: 0.6283 Acc_Specie_Final: 0.6688 Acc_Specie_MajorVoting: 0.6781 Acc_Descrizione: 0.7031
+
+EarlyStopping counter: 2 out of 7
+
+Epoch ended: 2022-05-09 12:25:51.567173
+Epoch 27/99
+----------
+train Loss: 2.9891 Acc: 0.8436 Acc_MajorVoting: 0.8404
+val Loss: 4.7612 Acc: 0.6893 Acc_Specie_First: 0.5410 Acc_Specie_Second: 0.6271 Acc_Specie_Final: 0.6655 Acc_Specie_MajorVoting: 0.6812 Acc_Descrizione: 0.6974
+
+EarlyStopping counter: 3 out of 7
+
+Epoch ended: 2022-05-09 12:35:42.685485
+Epoch 28/99
+----------
+train Loss: 2.9653 Acc: 0.8497 Acc_MajorVoting: 0.8446
+val Loss: 4.7693 Acc: 0.6932 Acc_Specie_First: 0.5426 Acc_Specie_Second: 0.6329 Acc_Specie_Final: 0.6645 Acc_Specie_MajorVoting: 0.6826 Acc_Descrizione: 0.7038
+
+EarlyStopping counter: 4 out of 7
+
+Epoch ended: 2022-05-09 12:45:19.311526
+Epoch 29/99
+----------
+train Loss: 2.9509 Acc: 0.8520 Acc_MajorVoting: 0.8446
+val Loss: 4.7863 Acc: 0.6888 Acc_Specie_First: 0.5388 Acc_Specie_Second: 0.6350 Acc_Specie_Final: 0.6681 Acc_Specie_MajorVoting: 0.6840 Acc_Descrizione: 0.6936
+
+EarlyStopping counter: 5 out of 7
+
+Epoch ended: 2022-05-09 12:55:01.507825
+Epoch 30/99
+----------
+train Loss: 2.9103 Acc: 0.8544 Acc_MajorVoting: 0.8502
+val Loss: 4.8336 Acc: 0.6869 Acc_Specie_First: 0.5433 Acc_Specie_Second: 0.6312 Acc_Specie_Final: 0.6671 Acc_Specie_MajorVoting: 0.6848 Acc_Descrizione: 0.6890
+
+EarlyStopping counter: 6 out of 7
+
+Epoch ended: 2022-05-09 13:04:43.170004
+Epoch 31/99
+----------
+train Loss: 2.8980 Acc: 0.8590 Acc_MajorVoting: 0.8516
+val Loss: 4.8471 Acc: 0.6935 Acc_Specie_First: 0.5405 Acc_Specie_Second: 0.6305 Acc_Specie_Final: 0.6719 Acc_Specie_MajorVoting: 0.6879 Acc_Descrizione: 0.6990
+
+EarlyStopping counter: 7 out of 7
+Early stopping
+[7.9329403440157575, 6.501816408974784, 5.98972153095972, 5.653750178359804, 5.4466511862618585, 5.204359673318409, 5.098455573831286, 4.929543398675465, 4.885068230685734, 4.670947455224537, 4.595337514366422, 4.590410375878925, 4.423456475848243, 4.3463187004838675, 4.227216939131419, 4.1957109442778995, 4.096991286391304, 4.041178195249467, 4.026379789624896, 3.8972857949279605, 3.4762696893442246, 3.298757736171995, 3.223949523199172, 3.1622431448527744, 3.1212866646902904, 3.0752267142136893, 3.053161846739905, 2.9890700521923246, 2.965284661168144, 2.9508905793939317, 2.9102845887343087, 2.8980037726107097]
+[tensor(0.5095, device='cuda:0', dtype=torch.float64), tensor(0.5393, device='cuda:0', dtype=torch.float64), tensor(0.5387, device='cuda:0', dtype=torch.float64), tensor(0.5611, device='cuda:0', dtype=torch.float64), tensor(0.6001, device='cuda:0', dtype=torch.float64), tensor(0.5880, device='cuda:0', dtype=torch.float64), tensor(0.5989, device='cuda:0', dtype=torch.float64), tensor(0.5967, device='cuda:0', dtype=torch.float64), tensor(0.6096, device='cuda:0', dtype=torch.float64), tensor(0.6300, device='cuda:0', dtype=torch.float64), tensor(0.5640, device='cuda:0', dtype=torch.float64), tensor(0.6194, device='cuda:0', dtype=torch.float64), tensor(0.6080, device='cuda:0', dtype=torch.float64), tensor(0.6356, device='cuda:0', dtype=torch.float64), tensor(0.6152, device='cuda:0', dtype=torch.float64), tensor(0.6280, device='cuda:0', dtype=torch.float64), tensor(0.6448, device='cuda:0', dtype=torch.float64), tensor(0.6240, device='cuda:0', dtype=torch.float64), tensor(0.6396, device='cuda:0', dtype=torch.float64), tensor(0.6396, device='cuda:0', dtype=torch.float64), tensor(0.6856, device='cuda:0', dtype=torch.float64), tensor(0.6858, device='cuda:0', dtype=torch.float64), tensor(0.6929, device='cuda:0', dtype=torch.float64), tensor(0.6918, device='cuda:0', dtype=torch.float64), tensor(0.6955, device='cuda:0', dtype=torch.float64), tensor(0.6885, device='cuda:0', dtype=torch.float64), tensor(0.6906, device='cuda:0', dtype=torch.float64), tensor(0.6893, device='cuda:0', dtype=torch.float64), tensor(0.6932, device='cuda:0', dtype=torch.float64), tensor(0.6888, device='cuda:0', dtype=torch.float64), tensor(0.6869, device='cuda:0', dtype=torch.float64), tensor(0.6935, device='cuda:0', dtype=torch.float64)]
+Training complete in 311m 12s
+Best val Loss: 4.660951 with Acc of 0.695476
+
+Process finished with exit code 0
+
+accuracies={
+        'train':[0.4795,0.5489,0.5867,0.6079,0.6257,0.6484,0.6543,0.6703,0.6759,0.6872,0.6990,0.6966,0.7089,0.7149,0.7250,0.7276,0.7391,0.7421,0.7451,0.7566,0.7944,0.8138,0.8191,0.8255,0.8303,0.8367,0.8391,0.8436,0.8497,0.8520,0.8544,0.8590],
+        'val':[0.5095,0.5393,0.5387,0.5611,0.6001,0.5880,0.5989,0.5967,0.6096,0.6300,0.5640,0.6194,0.6080,0.6356,0.6152,0.6280,0.6448,0.6240,0.6396,0.6396,0.6856,0.6858,0.6929,0.6918,0.6955,0.6885,0.6906,0.6893,0.6932,0.6888,0.6869,0.6935],
+        'train_major_voting': [0.3580,0.4613,0.5117,0.5495,0.5751,0.6059,0.6139,0.6326,0.6406,0.6606,0.6664,0.6667,0.6892,0.6979,0.7051,0.7085,0.7240,0.7309,0.7302,0.7418, 0.7839,0.8076,0.8118,0.8192,0.8241,0.8323,0.8354,0.8404,0.8446,0.8502,0.8516 ],
+        'val_major_voting': [0.3976 ,0.4155 ,0.5117,0.4857 ,0.5183 ,0.5302 ,0.5314 ,0.5145, 0.5552 ,0.5671,0.4726, 0.5610 , 0.5438 ,0.5921,0.5602 , 0.5876 ,0.6024 ,0.5795,0.5995 ,0.6157,0.6610,0.6679,0.6795,0.6779,0.6826,0.6774,0.6781,0.6812,0.6840,0.6848,0.6879],
+        'val_desc':[0.6214,0.6631,0.6448,0.6364,0.6819,0.6457,0.66640,0.6788,0.6640,0.6929,0.6555,0.6779,0.6721,0.6790,0.6702,0.6683,0.6871,0.6686,0.6798,0.6636,0.7102,0.7038,0.7062,0.7057,0.7083,0.6995,0.7031,0.6974,0.7038,0.6936,0.6890,0.6990]
+}

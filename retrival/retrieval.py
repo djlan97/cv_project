@@ -2,7 +2,8 @@ import pandas as pd
 import pickle
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.metrics.pairwise import cosine_distances,manhattan_distances,euclidean_distances
+from sklearn.metrics.pairwise import cosine_distances, euclidean_distances
+import statistics
 
 
 def calculate_recall(class_to_retrieve, retrieved_classes):
@@ -46,14 +47,19 @@ if __name__ == '__main__':
     k = 20
 
     # List of models to compare.
-    models = ['resnet50', 'resnet50_finetuned']
+    models = ['resnet50', 'resnet50_finetuned', 'resnet18', 'resnet18_finetuned', 'resnet34', 'resnet34_finetuned',
+              'googlenet', 'googlenet_finetuned', 'Backbone34FirstStrategy', 'Backbone34SecondStrategy',
+              'NewBackbone50FirstStrategy', 'NewBackbone50SecondStrategy']
 
     # Dictionaries containing recall and precision scores for each model and for each k.
     recall_scores_for_k = {}
     precision_scores_for_k = {}
 
-    for model in models:
+    recall_scores_for_classes_and_models = {}
+    precision_scores_for_classes_and_models = {}
 
+    for model in models:
+        print('Retrival results for {} model'.format(model))
         feats = {}
         categories_df = {}
 
@@ -63,13 +69,16 @@ if __name__ == '__main__':
             path = 'features/{}/{}_features.pkl'.format(model, x)
             feats[x], _ = load_features(path)
 
-        scores = cosine_distances(feats['test'], feats['data'])#np.dot(feats['test'], feats['data'].T)
+        scores = euclidean_distances(feats['test'], feats['data'])  # np.dot(feats['test'], feats['data'].T)
 
         # Get indices of the images with the best scores.
         sort_ind = np.argsort(scores)
 
         recall_scores_for_k[model] = np.zeros(k)
         precision_scores_for_k[model] = np.zeros(k)
+
+        recall_scores_for_classes_and_models[model] = {i: [] for i in range(21)}
+        precision_scores_for_classes_and_models[model] = {i: [] for i in range(21)}
 
         # For each k scores are calculated.
         for i in range(k):
@@ -79,8 +88,10 @@ if __name__ == '__main__':
             recall_for_test_im = np.zeros(len(sort_ind))
             precision_for_test_im = np.zeros(len(sort_ind))
 
-            for j, index in enumerate(sort_ind):
+            recall_scores_for_classes = {i: [] for i in range(21)}
+            precision_scores_for_classes = {i: [] for i in range(21)}
 
+            for j, index in enumerate(sort_ind):
                 class_to_retrieve = categories_df['test'].iloc[j].category_id
                 retrieved_classes = categories_df['data'].iloc[index[0:maxres]].category_id.values
 
@@ -88,9 +99,17 @@ if __name__ == '__main__':
 
                 precision_for_test_im[j] = calculate_precision(class_to_retrieve, retrieved_classes)
 
+                recall_scores_for_classes[class_to_retrieve].append(recall_for_test_im[j])
+                precision_scores_for_classes[class_to_retrieve].append(precision_for_test_im[j])
+
             # Take the average of all query images scores for every k.
             recall_scores_for_k[model][i] = recall_for_test_im.mean()
             precision_scores_for_k[model][i] = precision_for_test_im.mean()
+
+            for key in recall_scores_for_classes.keys():
+                recall_scores_for_classes_and_models[model][key].append(statistics.mean(recall_scores_for_classes[key]))
+                precision_scores_for_classes_and_models[model][key].append(
+                    statistics.mean(precision_scores_for_classes[key]))
 
             print('avg recall is {}'.format(recall_scores_for_k[model][i]))
             print('avg precision is {}'.format(precision_scores_for_k[model][i]))

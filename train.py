@@ -1,5 +1,6 @@
 from __future__ import print_function, division
 
+import pandas as pd
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -80,7 +81,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=100, patience
             print('{} Loss: {:.4f} Acc: {:.4f}'.format(
                 phase, epoch_loss, epoch_acc))
 
-            # deep copy the model
+            # Deep copy the model.
             if early_stopping_based_on_loss:
                 if phase == 'val' and epoch_loss < best_loss:
                     best_acc = epoch_acc
@@ -111,7 +112,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=100, patience
         time_elapsed // 60, time_elapsed % 60))
     print('Best val Loss: {:4f} with Acc of {:4f}'.format(best_loss, best_acc))
 
-    # load best model weights
+    # Load best model weights.
     model.load_state_dict(best_model_wts)
     return model, losses, accuracies
 
@@ -120,15 +121,23 @@ def visualize_model(model, num_images=6):
     was_training = model.training
     model.eval()
     images_so_far = 0
+    risultati = torch.zeros(21)
     fig = plt.figure()
 
     with torch.no_grad():
-        for i, (inputs, labels, _, _) in enumerate(dataloaders['val']):
+        for i, (inputs, labels, _) in enumerate(dataloaders['val']):
             inputs = inputs.to(device)
             labels = labels.to(device)
 
             outputs = model(inputs)
             _, preds = torch.max(outputs, 1)
+
+            for i in preds:
+                risultati[i] += 1
+
+            output = pd.Series(data=risultati, index=list(labels_map.values()))
+            output = output.sort_values(ascending=False)
+            print(output)
 
             for j in range(inputs.size()[0]):
                 images_so_far += 1
@@ -145,25 +154,18 @@ def visualize_model(model, num_images=6):
 
 if __name__ == '__main__':
 
-    # Managing parameters from command line.
+    # Managing parameters for training.
     show_results_example = False
     show_dataloader_example = False
-    early_stopping_based_on_loss = True
+    early_stopping_based_on_loss = False
     early_stopping_patience = 7
-    batch_size = 100
+    batch_size = 4
     num_workers = 8
     lr = 0.01
-    step_size = 7
+    step_size = 20
     model = 'resnet34'
-
     plt.ion()
 
-    labels_map = {0: 'moving',
-                  1: 'standing',
-                  2: 'nothing'
-                  }
-
-    '''
     labels_map = {0: 'baboon',
                   1: 'buffalo',
                   2: 'cheetah',
@@ -185,7 +187,6 @@ if __name__ == '__main__':
                   18: 'warthog',
                   19: 'wildebeest',
                   20: 'zebra'}
-    '''
 
     data_transforms = {
         'train': transforms.Compose([
@@ -209,7 +210,7 @@ if __name__ == '__main__':
     }
 
     data_dir = 'data/dataset'
-    image_datasets = {x: SerengetiDataset(os.path.join(data_dir, x + '_d.csv'), os.path.join(data_dir, x),
+    image_datasets = {x: SerengetiDataset(os.path.join(data_dir, x + '.csv'), os.path.join(data_dir, x),
                                           data_transforms[x])
                       for x in ['train', 'val']}
 

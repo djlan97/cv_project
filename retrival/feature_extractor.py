@@ -11,6 +11,14 @@ from numpy import linalg
 from torch.autograd import Variable
 
 
+class Identity(nn.Module):
+    def __init__(self):
+        super().__init__()
+
+    def forward(self, x):
+        return x
+
+
 def create_retirval_net(model, finetuned):
     if model == 'resnet18':
         ret_model = models.resnet18(pretrained=True)
@@ -25,39 +33,34 @@ def create_retirval_net(model, finetuned):
 
     num_ftrs = ret_model.fc.in_features
 
-    # Here the size of each output sample is set to 21.
-    ret_model.fc = nn.Linear(num_ftrs, 21)
-
     if finetuned:
+        # Here the size of each output sample is set to 21.
+        ret_model.fc = nn.Linear(num_ftrs, 21)
+
         ret_model.load_state_dict(torch.load('../results/{}/parameters.pt'.format(model)))
 
-    # Set the model train False since we are using our feature extraction network.
-    ret_model.train(False)
-
     # Remove last FC layers.
-    ret_model = torch.nn.Sequential(*(list(ret_model.children())[:-1])).to(device)
+    ret_model = torch.nn.Sequential(*(list(ret_model.children())[:-1]))
 
-    return ret_model
+    return ret_model, num_ftrs
 
 
-def extractor(ret_model, data):
+def extractor(ret_model, num_ftrs, data):
     since = time.time()
 
     # Read images images from a directory.
     list_imgs_names = os.listdir(data)
 
-    # Take number of model features.
-    #num_ftrs = ret_model.fc.in_features
-
     # Create an array to store features.
     images_number = len(list_imgs_names)
-    fea_all = np.zeros((images_number, 2048))
+    fea_all = np.zeros((images_number, num_ftrs))
 
     # Define empy array to store image names.
     image_all = []
 
     # Extract features.
     for ind, img_name in enumerate(list_imgs_names):
+        print('{}/{} -> {}'.format(ind + 1, len(list_imgs_names), img_name))
 
         img_path = os.path.join(data, img_name)
         image_np = Image.open(img_path)
@@ -71,7 +74,7 @@ def extractor(ret_model, data):
         fea = ret_model(image_np)
         fea = fea.squeeze()
         fea = fea.cpu().data.numpy()
-        fea = fea.reshape((1, 2048))
+        fea = fea.reshape((1, num_ftrs))
         fea = fea / linalg.norm(fea)
         fea_all[ind] = fea
         image_all.append(img_name)
@@ -84,7 +87,6 @@ def extractor(ret_model, data):
 
 
 def save_features(feats, image_list, path):
-
     # Save feature as a dictionary having image name as kay and feature vector as value.
     feats_dict = {image_list[i]: feats[i] for i in range(len(image_list))}
 
@@ -93,17 +95,31 @@ def save_features(feats, image_list, path):
 
 
 if __name__ == '__main__':
-    finetuned = True
-    model = 'resnet50'
+    finetuned = False
+    model = 'newBackbone50SecondStrategy'
+
+    if model in ['Backbone34FirstStrategy', 'Backbone34SecondStrategy',
+                 'NewBackbone50FirstStrategy', 'NewBackbone50SecondStrategy']:
+        ret_model = torch.load('models/{}.pth'.format(model))
+        if model in ['Backbone34FirstStrategy', 'Backbone34SecondStrategy']:
+            num_ftrs = 96
+        else:
+            num_ftrs = 256
+
+    else:
+        ret_model, num_ftrs = create_retirval_net(model, finetuned)
+
+    # Set the model train False since we are using our feature extraction network.
+    ret_model.train(False)
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
-    ret_model = create_retirval_net(model, finetuned)
+    ret_model.to(device)
 
     feats = {}
     image_list = {}
 
-    for x in ['data', 'test']:
+    # For each image in test and data folder extratc feature vector and save it in a specific folder.
+    for x in ['test', 'data']:
         path = 'features/{}{}/{}_features.pkl'.format(model, '_finetuned' if finetuned else '', x)
-        feats[x], image_list[x] = extractor(ret_model, './data/{}'.format(x))
+        feats[x], image_list[x] = extractor(ret_model, num_ftrs, './data/{}'.format(x))
         save_features(feats[x], image_list[x], path)
